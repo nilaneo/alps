@@ -1,0 +1,80 @@
+/* ==========================================================================
+    FONTS
+========================================================================== */
+/* ==========================================================================
+    LESS
+========================================================================== */
+.inline-block {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+}
+/* ==========================================================================
+    GENERAL STYLES
+========================================================================== */
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input,
+textarea,
+input:active,
+textarea:active,
+:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  zoom: 1;
+  /* IE < 8 */
+
+}
+.clearfix:after {
+  clear: both;
+}
+.list-inline li {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+}
+/* ==========================================================================
+    HEADER
+========================================================================== */
+/* ==========================================================================
+    MAIN
+========================================================================== */
