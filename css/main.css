@@ -28,11 +28,6 @@ p {
   margin: 0;
   padding: 0;
 }
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 input,
 textarea,
 input:active,
@@ -117,6 +112,7 @@ a:hover {
   position: relative;
   border-top: 2px solid #0ca26b;
   background-color: #ffffff;
+  color: #383838;
 }
 .contacts-top {
   height: 40px;
@@ -153,11 +149,90 @@ a:hover {
   width: 30px;
   height: 54px;
   padding: 25px 0 0 5px;
+  color: #383838;
 }
 .languages .is-active {
   background: url(../img/ribbon-down.png) no-repeat;
   color: #ffffff;
 }
+.bg-logo-main {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -119px;
+  display: block;
+  width: 238px;
+  height: 100px;
+  background: url(../img/bg-logo-main.png) no-repeat;
+  text-align: center;
+}
+.logo-main {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+  width: 180px;
+  height: 64px;
+  margin-top: 10px;
+  background: url(../img/logo-main.png) no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* Navigation
+========================================================================== */
+.nav-main-top {
+  height: 45px;
+  background: url(../img/nav-header.jpg);
+}
+.nav-main-top ul li {
+  float: left;
+}
+.nav-main-top ul a {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+  height: 41px;
+  line-height: 40px;
+  color: #383838;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-main-top ul a.is-active,
+.nav-main-top ul a:hover {
+  border-bottom: 3px solid #0ca26b;
+}
+.nav-main-top ul .separated:before {
+  float: left;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 28px;
+  margin-top: 6px;
+  background-color: #afafaf;
+}
+.nav-main-top .nav-top-left {
+  float: left;
+}
+.nav-main-top .nav-top-left a {
+  padding: 0 26px;
+}
+.nav-main-top .nav-top-right {
+  float: right;
+  text-align: right;
+}
+.nav-main-top .nav-top-right a {
+  padding: 0 14px;
+}
 /* ==========================================================================
     MAIN
 ========================================================================== */
+.block-slider {
+  padding: 35px 0;
+  background-color: #ffffd7;
+  text-align: center;
+}

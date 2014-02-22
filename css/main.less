@@ -11,6 +11,8 @@
 @white: #fff;
 @black: #000;
 @green: #0ca26b;
+@gray: #383838;
+@lemon: #ffffd7;
 
 .border-radius (@radius: 5px) {
     -webkit-border-radius: @radius;
@@ -108,10 +110,6 @@ p {
     padding: 0;
 }
 
-* {
-    .box-sizing;
-}
-
 input,
 textarea,
 input:active,
@@ -204,6 +202,7 @@ a:hover {
     position: relative;
     border-top: 2px solid @green;
     background-color: @white;
+    color: @gray;
 }
 
 .contacts-top {
@@ -232,6 +231,7 @@ a:hover {
         width: 30px;
         height: 54px;
         padding: 25px 0 0 5px;
+        color: @gray;
     }
 
     .is-active {
@@ -240,8 +240,91 @@ a:hover {
     }
 }
 
+.bg-logo-main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -119px;
+    display: block;
+    width: 238px;
+    height: 100px;
+    background: url(../img/bg-logo-main.png) no-repeat;
+    text-align: center;
+}
+
+.logo-main {
+    .inline-block;
+    width: 180px;
+    height: 64px;
+    margin-top: 10px;
+    background: url(../img/logo-main.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Navigation
+========================================================================== */
+
+.nav-main-top {
+    height: 45px;
+    background: url(../img/nav-header.jpg);
+
+    ul {
+        li {
+            float: left;
+        }
+
+        a {
+            .inline-block;
+            height: 41px;
+            line-height: 40px;
+            color: @gray;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        a.is-active,
+        a:hover {
+            border-bottom: 3px solid @green;
+        }
+
+        .separated:before {
+            float: left;
+            display: block;
+            content: "";
+            width: 1px;
+            height: 28px;
+            margin-top: 6px;
+            background-color: #afafaf;
+        }
+    }
+
+    .nav-top-left {
+        float: left;
+
+        a {
+            padding: 0 26px;
+        }
+    }
+
+    .nav-top-right {
+        float: right;
+        text-align: right;
+
+        a {
+            padding: 0 14px;
+        }
+    }
+}
+
 /* ==========================================================================
     MAIN
 ========================================================================== */
 
-
+.block-slider {
+    padding: 35px 0;
+    background-color: @lemon;
+    text-align: center;
+}
