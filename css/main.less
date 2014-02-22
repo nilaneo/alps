@@ -81,8 +81,12 @@
     zoom: 1; /* IE < 8 */
 }
 
-.flat-shadowed-right(@width:200px, @height:200px, @color:#007bff) {
+.flat-shadow-right(@width:7px, @height:38px, @color:#d7d7d7) {
     position: absolute;
+    bottom: 0;
+    right: -@width;
+    display: block;
+    content: "";
     width: 0px;
     height: 0px;
     border-style: solid;
@@ -327,4 +331,37 @@ a:hover {
     padding: 35px 0;
     background-color: @lemon;
     text-align: center;
+}
+
+.search-filters {
+    border-top: 1px solid @white;
+    background-color: #f4f4f4;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        float: left;
+        margin-right: 10px;
+        a {
+            .inline-block;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 15px;
+            color: @gray;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .is-active {
+            position: relative;
+            color: @white;
+            background-color: @green;
+        }
+
+        .is-active:after {
+            .flat-shadow-right(7px, 38px, #d7d7d7);
+        }
+    }
 }
