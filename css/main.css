@@ -87,7 +87,7 @@ a:hover {
 .icon-phone-black {
   width: 10px;
   height: 18px;
-  margin-right: 8px;
+  margin-right: 5px;
   background-position: 0 0;
 }
 .i-twitter-black {
@@ -127,10 +127,10 @@ a:hover {
 
 }
 .icons-social {
-  margin-left: 24px;
+  margin-left: 25px;
 }
 .icons-social a {
-  margin-left: 8px;
+  margin-left: 4px;
 }
 .languages {
   display: inline-block;
@@ -138,7 +138,7 @@ a:hover {
   zoom: 1;
   /* IE < 8 */
 
-  margin: -25px 0 0 20px;
+  margin: -25px 0 0 15px;
 }
 .languages a {
   display: inline-block;
@@ -146,7 +146,7 @@ a:hover {
   zoom: 1;
   /* IE < 8 */
 
-  width: 30px;
+  width: 25px;
   height: 54px;
   padding: 25px 0 0 5px;
   color: #383838;
@@ -219,14 +219,14 @@ a:hover {
   float: left;
 }
 .nav-main-top .nav-top-left a {
-  padding: 0 26px;
+  padding: 0 28px;
 }
 .nav-main-top .nav-top-right {
   float: right;
   text-align: right;
 }
 .nav-main-top .nav-top-right a {
-  padding: 0 14px;
+  padding: 0 16px;
 }
 /* ==========================================================================
     MAIN
