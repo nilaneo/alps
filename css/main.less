@@ -2,7 +2,7 @@
     FONTS
 ========================================================================== */
 
-
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700);
 
 /* ==========================================================================
     LESS
@@ -10,6 +10,7 @@
 
 @white: #fff;
 @black: #000;
+@green: #0ca26b;
 
 .border-radius (@radius: 5px) {
     -webkit-border-radius: @radius;
@@ -78,6 +79,15 @@
     zoom: 1; /* IE < 8 */
 }
 
+.flat-shadowed-right(@width:200px, @height:200px, @color:#007bff) {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: @height @width 0 0;
+    border-color: @color transparent transparent transparent;
+}
+
 /* ==========================================================================
     GENERAL STYLES
 ========================================================================== */
@@ -85,8 +95,11 @@
 html,
 body {
     height: 100%;
-    background-color: @white;
-    font-size: 16px;
+    font-family: 'Cuprum', sans-serif;
+}
+
+body {
+    border-top: 3px solid #383838;
 }
 
 ul,
@@ -146,11 +159,86 @@ a:hover {
     }
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.icon {
+    .inline-block;
+    vertical-align: top;
+    background-image: url(../img/sprite-icons.png);
+    background-repeat: no-repeat;
+}
+
+.icon-phone-black {
+    width: 10px;
+    height: 18px;
+    margin-right: 8px;
+    background-position: 0 0;
+}
+
+.i-twitter-black {
+    width: 19px;
+    height: 18px;
+    background-position: -14px 0;
+}
+
+.i-facebook-black {
+    width: 19px;
+    height: 18px;
+    background-position: -36px 0;
+}
+
+.i-skype-black {
+    width: 19px;
+    height: 18px;
+    background-position: -59px 0;
+}
+
 /* ==========================================================================
     HEADER
 ========================================================================== */
 
+.header {
+    position: relative;
+    border-top: 2px solid @green;
+    background-color: @white;
+}
 
+.contacts-top {
+    height: 40px;
+    padding-top: 25px;
+
+    span,
+    div {
+        .inline-block;
+    }
+}
+
+.icons-social {
+    margin-left: 24px;
+
+    a {
+        margin-left: 8px;
+    }
+}
+
+.languages {
+    .inline-block;
+    margin: -25px 0 0 20px;
+    a {
+        .inline-block;
+        width: 30px;
+        height: 54px;
+        padding: 25px 0 0 5px;
+    }
+
+    .is-active {
+        background: url(../img/ribbon-down.png) no-repeat;
+        color: @white;
+    }
+}
 
 /* ==========================================================================
     MAIN
