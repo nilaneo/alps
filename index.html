@@ -81,7 +81,43 @@
             </header>
             <div class="main">
                 <div class="block-slider">
-                    <img src="img/slider-top.jpg" alt="">
+                    <div class="jcarousel-wrapper">
+                        <div class="jcarousel">
+                            <ul>
+                                <li>
+                                    <a href="#1">
+                                        <div class="slide slide-1">
+                                            <div class="slide-inner">
+                                                <h3 class="ap-name"><a href="#0" class="text-light">3 bdr Apartment<br> in Kato  Pafos</a></h3>
+                                                <p class="ap-price">€ 255,000</p>
+                                                <hr>
+                                                <p class="ap-description">
+                                                    This 3 bedroom, 2 bathroom fully furnished spacious top floor apartment is located in a residental area of Kato Pafos
+                                                </p>
+                                                <a href="#0" class="lnk-primary">More deatails</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#1">
+                                        <div class="slide slide-2">
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#1">
+                                        <div class="slide slide-3">
+
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="jcarousel-control-prev"><span></span></a>
+                        <a href="#" class="jcarousel-control-next"><span></span></a>
+                    </div>
                 </div>
                 <div class="block-search">
                     <div class="search-filters">
@@ -161,8 +197,8 @@
                                             <span class="appartment-price">€ 255,000 </span>
                                         </div>
                                         <div class="right">
-                                            <h3><a href="#0">3 bdr Apartment in Kato  Pafos</a></h3>
-                                            <p>
+                                            <h3 class="ap-name"><a href="#0">3 bdr Apartment in Kato  Pafos</a></h3>
+                                            <p class="ap-description">
                                                 This 3 bedroom, 2 bathroom fully furnished spacious top floor apartment is locatedin a residental area of Kato Pafos
                                             </p>
                                             <a href="#0" class="lnk-primary">More deatails</a>
@@ -411,6 +447,18 @@
         <script>
             $(function(){
                 $("select").selectify();
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+        <script>
+            $(function() {
+                $('.jcarousel')
+                    .jcarousel({wrap: "circular"})
+                    .jcarouselAutoscroll({interval: 5000});
+
+                $('.jcarousel-control-prev').jcarouselControl({target: "-=1"});
+
+                $('.jcarousel-control-next').jcarouselControl({target: "+=1"});
             });
         </script>
 
