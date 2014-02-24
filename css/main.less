@@ -252,6 +252,14 @@ a:hover {
     vertical-align: middle;
 }
 
+.icon-pin {
+    width: 22px;
+    height: 18px;
+    margin-right: 5px;
+    background-position: -76px -48px;
+    vertical-align: bottom;
+}
+
 /* ==========================================================================
     HEADER
 ========================================================================== */
@@ -435,10 +443,31 @@ a:hover {
 }
 
 .ap-price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
     font-size: 18px;
     font-weight: bold;
     color: @green;
     text-transform: uppercase;
+    background-color: @green;
+    color: @white;
+    text-align: center;
+
+    &:after {
+        position: absolute;
+        bottom: 11px;
+        right: -5px;
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 4px 0 4px 5px;
+        border-color: transparent transparent transparent @green;
+
+    }
 }
 
 .ap-description {
@@ -591,7 +620,7 @@ a:hover {
 ========================================================================== */
 
 .block-results {
-    padding-top: 30px;
+    padding-bottom: 30px;
     background: url(../img/bg-light.png);
 }
 
@@ -627,12 +656,6 @@ a:hover {
     .flat-shadow-right(@width:10px, @height:166px, @color:#d7d7d7);
 }
 
-.ap-price {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 .short-description {
     padding: 5px;
     background-color: @white;
@@ -655,9 +678,51 @@ a:hover {
     }
 }
 
+/* Block-map
+========================================================================== */
+
+.block-map {
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #afafaf;
+    background: url(../img/bg-light.png);
+    img {
+        display: block;
+    }
+}
+
+.angle {
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    display: block;
+    width: 20px;
+    height: 8px;
+    margin-left: -10px;
+    background: url(../img/angle-1.png) no-repeat;
+}
+
+.lnk-map-hide {
+    color: @black;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.map-wrapper {
+    margin-top: 8px;
+    padding: 10px;
+    .box-sizing;
+    background-color: @white;
+}
+
 /* ==========================================================================
    Pagination
 ========================================================================== */
+
+.pagination,
+.sorting {
+    padding-top: 30px;
+}
 
 .pagination,
 .sorting,
