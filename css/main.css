@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400,700);
+@import url(http://fonts.googleapis.com/css?family=Scada);
 /* ==========================================================================
     FONTS
 ========================================================================== */
@@ -10,7 +11,6 @@
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 /* ==========================================================================
     GENERAL STYLES
@@ -58,7 +58,6 @@ a:hover {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
-
 }
 .clearfix:after {
   clear: both;
@@ -68,7 +67,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .container {
   width: 940px;
@@ -79,7 +77,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
   background-image: url(../img/sprite-icons.png);
   background-repeat: no-repeat;
@@ -124,7 +121,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .icons-social {
   margin-left: 25px;
@@ -137,7 +133,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   margin: -25px 0 0 15px;
 }
 .languages a {
@@ -145,7 +140,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 25px;
   height: 54px;
   padding: 25px 0 0 5px;
@@ -171,7 +165,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 180px;
   height: 64px;
   margin-top: 10px;
@@ -194,7 +187,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 41px;
   line-height: 40px;
   color: #383838;
@@ -299,23 +291,22 @@ a:hover {
 }
 /* Block-search
 ========================================================================== */
-.search-filters {
+.search-ap-type {
   border-top: 1px solid #ffffff;
   background-color: #f4f4f4;
 }
-.search-filters ul {
+.search-ap-type ul {
   list-style-type: none;
 }
-.search-filters li {
+.search-ap-type li {
   float: left;
   margin-right: 10px;
 }
-.search-filters li a {
+.search-ap-type li a {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -323,12 +314,12 @@ a:hover {
   font-size: 16px;
   text-transform: uppercase;
 }
-.search-filters li .is-active {
+.search-ap-type li .is-active {
   position: relative;
   color: #ffffff;
   background-color: #0ca26b;
 }
-.search-filters li .is-active:after {
+.search-ap-type li .is-active:after {
   position: absolute;
   bottom: 0;
   right: -7px;
@@ -339,6 +330,90 @@ a:hover {
   border-style: solid;
   border-width: 38px 7px 0 0;
   border-color: #d7d7d7 transparent transparent transparent;
+}
+.search-filters {
+  padding-bottom: 20px;
+  background-color: #3b3b3b;
+}
+.search-filters .left {
+  width: 700px;
+}
+.list-filters li {
+  float: left;
+  height: 50px;
+  margin: 15px 25px 0 0;
+  list-style: none;
+}
+.label-primary {
+  display: block;
+  margin-bottom: 4px;
+  color: #f7f7f7;
+  font-size: 17px;
+  font-family: 'Scada', sans-serif;
+}
+.txt-decorated {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.txt-decorated:before,
+.txt-decorated:after {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 17px;
+  height: 7px;
+  margin-bottom: 3px;
+  background-image: url(../img/sprite-decor.png);
+  background-repeat: no-repeat;
+  content: "";
+  vertical-align: middle;
+}
+.txt-decorated:before {
+  margin-right: 8px;
+  background-position: 0 0;
+}
+.txt-decorated:after {
+  margin-left: 8px;
+  background-position: -17px 0;
+}
+.results-quantity {
+  margin: 40px 0 35px;
+}
+.results-quantity span {
+  color: #0ca26b;
+}
+.btn-big {
+  position: relative;
+  display: block;
+  width: 184px;
+  height: 38px;
+  border: none;
+  background-color: #0ca26b;
+  color: #f4f4f4;
+  font-size: 18px;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn-big:after {
+  position: absolute;
+  bottom: 0;
+  right: -12px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 19px 0 19px 12px;
+  border-color: transparent transparent transparent #0ca26b;
+}
+/* Block-results
+========================================================================== */
+.block-results {
+  background: url(../img/bg-light.png);
 }
 /* ==========================================================================
     Carousel
@@ -388,7 +463,6 @@ a:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -409,4 +483,101 @@ a:hover {
 .jcarousel-control-next span {
   margin-left: -8px;
   background-position: -6px 0;
+}
+/* ==========================================================================
+    Custom select box
+========================================================================== */
+.select-box {
+  height: 17px;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+}
+.select-search-filter {
+  width: 150px;
+}
+.sl-button {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 13px;
+  height: 6px !important;
+  margin: 12px 6px 0;
+  background: url(../img/arrow-down.png) no-repeat;
+  font-size: 0;
+  line-height: 0;
+}
+.sl-container {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+.sl-container .sl-placeholder-container {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 6px 22px 4px 8px;
+  background: #989897;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.sl-placeholder {
+  height: 12px;
+  background: #989897;
+  color: #383838;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Scada', sans-serif;
+  line-height: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.select-search-filter .sl-placeholder {
+  width: 115px !important;
+}
+.sl-container .sl-options {
+  top: 20px !important;
+  width: 100%;
+  padding: 0;
+  max-height: 200px;
+  margin: 0;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  list-style: none outside none;
+  overflow: auto;
+  z-index: 1;
+}
+.sl-container .sl-options li {
+  margin: 0;
+  padding: 0 12px;
+  overflow: hidden;
+  line-height: 30px;
+}
+.sl-container .sl-options li a {
+  display: block;
+  height: 30px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Scada', sans-serif;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: left;
+}
+.sl-container .sl-options li:hover {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.sl-container .sl-options li:hover a {
+  color: #0ca26b;
+}
+.sl-container:hover .sl-button,
+.sl-open .sl-button {
+  border-color: #0ca26b transparent transparent;
 }
