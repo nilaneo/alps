@@ -134,10 +134,6 @@ a:focus {
     outline: none;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
 .left {
     float: left;
 }
@@ -258,6 +254,32 @@ a:hover {
     margin-right: 5px;
     background-position: -76px -48px;
     vertical-align: bottom;
+}
+
+.i-phone-white,
+.i-envelope-white,
+.i-skype-white {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.i-phone-white {
+    width: 14px;
+    height: 20px;
+    margin-right: 14px;
+    background-position: 2px -44px;
+}
+
+.i-envelope-white {
+    width: 21px;
+    height: 18px;
+    background-position: -11px -39px;
+}
+
+.i-skype-white {
+    width: 24px;
+    height: 22px;
+    background-position: -32px -42px;
 }
 
 /* ==========================================================================
@@ -443,31 +465,10 @@ a:hover {
 }
 
 .ap-price {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
     font-size: 18px;
     font-weight: bold;
     color: @green;
     text-transform: uppercase;
-    background-color: @green;
-    color: @white;
-    text-align: center;
-
-    &:after {
-        position: absolute;
-        bottom: 11px;
-        right: -5px;
-        display: block;
-        content: "";
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 4px 0 4px 5px;
-        border-color: transparent transparent transparent @green;
-
-    }
 }
 
 .ap-description {
@@ -486,8 +487,14 @@ a:hover {
     text-transform: uppercase;
 }
 
+.lnk-small {
+    color: @green;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
 .text-light {
-    color: @white-darker;
+    color: @white-darker !important;
 }
 
 .text-dark {
@@ -497,7 +504,7 @@ a:hover {
 /* Block-search
 ========================================================================== */
 
-.search-ap-type {
+.tabs {
     border-top: 1px solid @white;
     background-color: @white-darker;
 
@@ -530,6 +537,7 @@ a:hover {
 .search-filters {
     padding-bottom: 20px;
     background-color: #3b3b3b;
+    background: url(../img/bg-gray.jpg);
 
     .left {
         width: 700px;
@@ -656,6 +664,33 @@ a:hover {
     .flat-shadow-right(@width:10px, @height:166px, @color:#d7d7d7);
 }
 
+.ap-price-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: @green;
+    text-transform: uppercase;
+    background-color: @green;
+    color: @white;
+    text-align: center;
+
+    &:after {
+        position: absolute;
+        bottom: 11px;
+        right: -5px;
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 4px 0 4px 5px;
+        border-color: transparent transparent transparent @green;
+    }
+}
+
 .short-description {
     padding: 5px;
     background-color: @white;
@@ -713,6 +748,110 @@ a:hover {
     padding: 10px;
     .box-sizing;
     background-color: @white;
+}
+
+/* Block-hot
+========================================================================== */
+
+.block-hot {
+    padding: 40px 0 56px;
+}
+
+.title-block {
+    margin: 0;
+    color: @gray;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin: 5px 0 20px;
+    color: @black;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.slide-small {
+    img {
+        display: block;
+    }
+
+    span {
+        color: @gray;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: @black;
+        display: inline !important;
+    }
+
+    .lnk-primary {
+        margin-left: 10px;  
+        color: @green;
+    }
+}
+
+.price-hot {
+    .inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #e0e0e0;
+}
+
+.hot-description {
+    margin: 0;
+    margin-top: 10px;
+    color: @black;
+    font-size: 14px;
+    font-family: "Scada", sans-serif;
+}
+
+/* ==========================================================================
+   FOOTER
+========================================================================== */
+
+.footer {
+    padding: 30px 0 50px;
+    border-top: 2px solid @green;
+    background: url(../img/bg-gray.jpg);
+}
+
+.block-about,
+.block-legal-info,
+.block-contacts-footer {
+    float: left;
+    margin-right: 40px;
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    p, li {
+        color: @white-darker;
+        font-size: 14px;
+    }
+
+    p, a, li {
+        font-family: "Scada", sans-serif;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.block-about {
+    width: 460px;
+}
+
+.block-contacts-footer {
+    li {
+        line-height: 34px;
+    }
 }
 
 /* ==========================================================================
@@ -857,6 +996,47 @@ a:hover {
         margin-left: -8px;
         background-position: -6px 0;
     }
+}
+
+/* Slider-small
+========================================================================== */
+
+.slider-small {
+    margin-top: 25px;    
+
+    .jcarousel-wrapper {
+        width: 856px;
+        height: 240px;
+    }
+
+    .jcarousel {
+        li {
+            width: 210px;
+            height: 240px;
+            margin-right: 10px;
+        }
+    }
+
+    .jcarousel-control-prev-small,
+    .jcarousel-control-next-small {
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 24px;
+        top: 32%;
+    }
+
+    .jcarousel-control-prev-small {
+        left: -38px;
+        .btn-prev;
+
+    }
+
+    .jcarousel-control-next-small {
+        right: -48px;
+        .btn-next;
+    }
+
 }
 
 /* ==========================================================================
