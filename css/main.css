@@ -72,6 +72,13 @@ a:hover {
   width: 940px;
   margin: 0 auto;
 }
+.container-wider {
+  width: 976px;
+  margin: 0 auto;
+}
+.container-wider .container {
+  margin: 0 auto;
+}
 .icon {
   display: inline-block;
   *display: block;
@@ -101,6 +108,40 @@ a:hover {
   width: 19px;
   height: 18px;
   background-position: -59px 0;
+}
+.i-area,
+.i-bedrooms,
+.i-bathrooms,
+.i-garages {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.i-area {
+  width: 19px;
+  height: 18px;
+  background-position: 2px -23px;
+}
+.i-bedrooms {
+  width: 32px;
+  height: 18px;
+  background-position: -16px -24px;
+}
+.i-bathrooms {
+  width: 24px;
+  height: 18px;
+  margin-right: 3px;
+  background-position: -51px -25px;
+}
+.i-garages {
+  width: 24px;
+  height: 18px;
+  background-position: -74px -24px;
+}
+.icon-3 {
+  width: 19px;
+  height: 13px;
+  background-position: -59px -50px;
+  vertical-align: middle;
 }
 /* ==========================================================================
     HEADER
@@ -281,6 +322,11 @@ a:hover {
   line-height: 20px;
 }
 .lnk-primary {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  margin-top: 5px;
   font-size: 14px;
   color: #0ca26b;
   text-decoration: underline;
@@ -288,6 +334,9 @@ a:hover {
 }
 .text-light {
   color: #f4f4f4;
+}
+.text-dark {
+  color: #383838;
 }
 /* Block-search
 ========================================================================== */
@@ -413,7 +462,148 @@ a:hover {
 /* Block-results
 ========================================================================== */
 .block-results {
+  padding-top: 30px;
   background: url(../img/bg-light.png);
+}
+.list-results {
+  list-style: none;
+}
+.list-results > li {
+  float: left;
+  margin-top: 30px;
+}
+.ap-block {
+  width: 452px;
+  padding: 0 18px;
+}
+.ap-block .right {
+  width: 184px;
+  padding-right: 10px;
+}
+.ap-block p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Scada', sans-serif;
+}
+.img-wrapper {
+  position: relative;
+  padding: 10px 5px 0;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.img-wrapper:after {
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 166px 10px 0 0;
+  border-color: #d7d7d7 transparent transparent transparent;
+}
+.ap-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.short-description {
+  padding: 5px;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.short-description ul {
+  list-style: none;
+}
+.short-description li {
+  float: left;
+  padding: 0 7px;
+  border-left: 1px solid #afafaf;
+}
+.short-description li:first-child {
+  padding: 0;
+  padding-right: 7px;
+  border-left: none;
+}
+/* ==========================================================================
+   Pagination
+========================================================================== */
+.pagination,
+.sorting,
+.btn-prev,
+.btn-next {
+  color: #000000;
+  font-size: 14px;
+}
+.btn-prev span,
+.btn-next span {
+  position: relative;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 30px;
+  height: 22px;
+  line-height: 24px;
+  background-color: #383838;
+  text-align: center;
+}
+.btn-prev span:after,
+.btn-next span:after {
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 20px 4px 0 0;
+  border-color: #d7d7d7 transparent transparent transparent;
+}
+.btn-prev i,
+.btn-next i {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 6px;
+  height: 13px;
+  background-image: url(../img/sprite-arrows.png);
+  background-repeat: no-repeat;
+}
+.btn-prev {
+  margin-right: 15px;
+}
+.btn-prev span {
+  margin-right: 10px;
+}
+.btn-prev i {
+  background-position: 0 0;
+}
+.btn-next {
+  margin-right: 20px;
+}
+.btn-next span {
+  margin-left: 10px;
+}
+.btn-next i {
+  background-position: -6px 0;
+}
+.page-cur {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  height: 22px;
+  line-height: 22px;
+  padding: 0 10px;
+  background-color: #cfcfcf;
 }
 /* ==========================================================================
     Carousel
@@ -577,7 +767,19 @@ a:hover {
 .sl-container .sl-options li:hover a {
   color: #0ca26b;
 }
-.sl-container:hover .sl-button,
-.sl-open .sl-button {
-  border-color: #0ca26b transparent transparent;
+.select-sort {
+  width: 98px;
+  margin: 0 15px;
+}
+.select-sort .sl-placeholder-container {
+  background: #cfcfcf;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.select-sort .sl-placeholder {
+  width: 65px !important;
+  height: 12px;
+  background: #cfcfcf;
+  font-size: 12px;
 }
