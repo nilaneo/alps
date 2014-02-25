@@ -85,7 +85,7 @@ a:focus {
   background-image: url(../img/sprite-icons.png);
   background-repeat: no-repeat;
 }
-.icon-phone-black {
+.i-phone-black {
   width: 10px;
   height: 18px;
   margin-right: 5px;
@@ -168,6 +168,14 @@ a:focus {
   width: 24px;
   height: 22px;
   background-position: -32px -42px;
+}
+.block-angled {
+  position: relative;
+  border-top: 1px solid #afafaf;
+  background-color: #ffffff;
+}
+.bg-light {
+  background: url(../img/bg-light.png);
 }
 /* ==========================================================================
     HEADER
@@ -585,9 +593,7 @@ a:focus {
 /* Block-map
 ========================================================================== */
 .block-map {
-  position: relative;
   padding-bottom: 25px;
-  border-bottom: 1px solid #afafaf;
   background: url(../img/bg-light.png);
 }
 .block-map img {
@@ -596,7 +602,7 @@ a:focus {
 .angle {
   position: absolute;
   left: 50%;
-  bottom: -1px;
+  top: -8px;
   display: block;
   width: 20px;
   height: 8px;
@@ -667,6 +673,19 @@ a:focus {
   font-family: "Scada", sans-serif;
 }
 /* ==========================================================================
+   ONE APARTMENT
+========================================================================== */
+.ap-main {
+  width: 670px;
+  padding-top: 60px;
+}
+.slider-ap {
+  border: 6px solid #ffffff;
+}
+.slider-ap img {
+  display: block;
+}
+/* ==========================================================================
    FOOTER
 ========================================================================== */
 .footer {
@@ -716,6 +735,14 @@ a:focus {
 }
 .block-contacts-footer li {
   line-height: 34px;
+}
+/* ==========================================================================
+   Sidebar
+========================================================================== */
+.sidebar {
+  width: 260px;
+  padding-top: 60px;
+  background-color: #ffffd7;
 }
 /* ==========================================================================
    Pagination
