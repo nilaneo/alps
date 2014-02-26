@@ -1154,8 +1154,16 @@ a:focus {
   border-width: 242px 8px 0 0;
   border-color: #e7e7d7 transparent transparent transparent;
 }
+.list-featured-ap li:first-child {
+  margin-top: 0;
+}
+.list-featured-ap .ap-name {
+  margin-bottom: 5px;
+}
 .list-featured-ap .ap-description {
   margin: 0;
+  line-height: 16px;
+  font-family: "Scada", sans-serif;
 }
 /* ==========================================================================
    Pagination
