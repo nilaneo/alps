@@ -134,6 +134,7 @@
 html,
 body {
     height: 100%;
+    font-size: 14px;
     font-family: 'Cuprum', sans-serif;
 }
 
@@ -161,6 +162,10 @@ a {
 
 a:focus {
     outline: none;
+}
+
+img {
+    display: block;
 }
 
 .left {
@@ -194,6 +199,10 @@ a:focus {
     padding-top: 10px !important;
 }
 
+.pdt-30 {
+    padding-top: 30px !important;
+}
+
 .pdb-20 {
     padding-bottom: 20px !important;
 }
@@ -217,6 +226,7 @@ a:focus {
 .container {
     width: 940px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container-wider {
@@ -342,10 +352,43 @@ a:focus {
 }
 
 .i-print {
-    width: 26px;
+    width: 20px;
     height: 22px;
+    margin-right: 6px;
     background-position: 3px -64px;
     vertical-align: middle;
+}
+
+.i-calendar {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+    background-position: -17px -64px;
+}
+
+.i-picture,
+.i-gallery,
+.i-video {
+    vertical-align: middle;
+}
+
+.i-picture {
+    width: 21px;
+    height: 18px;
+    background-position: -39px -68px;
+}
+
+.i-gallery {
+    width: 23px;
+    height: 19px;
+    background-position: -59px -67px;
+}
+
+.i-video {
+    width: 21px;
+    height: 18px;
+    background-position: 1px -87px;
 }
 
 .icon-wrapper {
@@ -361,10 +404,29 @@ a:focus {
     }
 }
 
+.icon-white {
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    .block-white;
+    .flat-shadow-right(5px, 28px, #d2d2d2);
+}
+
 .block-angled {
     position: relative;
     border-top: 1px solid #afafaf;
     background-color: @white;
+}
+
+.block-white {
+    background-color: @white;
+}
+
+.block-bordered {
+    border: 6px solid @white;
 }
 
 .bg-light {
@@ -579,7 +641,7 @@ a:focus {
     text-transform: uppercase;
 }
 
-.ap-description {
+.description {
     margin: 0;
     margin-top: 20px;
     font-size: 14px;
@@ -679,15 +741,15 @@ a:focus {
     font-family: 'Scada', sans-serif;
 }
 
-.txt-decorated {
+.text-decorated {
     margin: 0;
     font-size: 18px;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-.txt-decorated:before,
-.txt-decorated:after {
+.text-decorated:before,
+.text-decorated:after {
     .inline-block;
     width: 17px;
     height: 7px;
@@ -698,13 +760,13 @@ a:focus {
     vertical-align: middle;
 }
 
-.txt-decorated:before {
-    margin-right: 8px;
+.text-decorated:before {
+    margin-right: 5px;
     background-position: 0 0;
 }
 
-.txt-decorated:after {
-    margin-left: 8px;
+.text-decorated:after {
+    margin-left: 5px;
     background-position: -17px 0;
 }
 
@@ -817,6 +879,7 @@ a:focus {
         float: left;
         padding: 0 7px;
         border-left: 1px solid #afafaf;
+        font-size: 16px;
     }
 
     li:first-child {
@@ -940,16 +1003,15 @@ a:focus {
    ONE APARTMENT
 ========================================================================== */
 
-.ap-main {
+.main-content {
     width: 670px;
-    padding-top: 60px;
+    padding: 60px 0 30px;
 }
 
 .slider-ap {
     position: relative;
     width: 658px;
     height: 370px;
-    border: 6px solid @white;
 }
 
 .slide-ap-1-big {
@@ -1058,9 +1120,6 @@ a:focus {
 }
 
 .property-map {
-    .box-sizing;
-    border: 6px solid @white;
-
     img {
         display: block;
     }
@@ -1137,6 +1196,53 @@ a:focus {
 }
 
 /* ==========================================================================
+   NEWS
+========================================================================== */
+
+.new {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a5a5a5;
+    margin-bottom: 30px;
+}
+
+.news-header {
+    padding:  12px 8px;
+    .box-sizing;
+}
+
+.new-info {
+    margin-top: 12px;
+    .scada;
+}
+
+.new-content {
+    width: 365px;
+}
+
+.new-author {
+    .inline-block;
+    padding-left: 20px;
+    border-left: 1px solid #afafaf;
+    margin-left: 20px;
+}
+
+.news-place {
+    position: relative;
+    .inline-block;
+    height: 24px;
+    padding: 0 8px;
+    margin-left: 5px;
+    background-color: @green;
+    .text-light;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    .triangle-left(5px, 10px, @green);
+
+}
+
+/* ==========================================================================
    FOOTER
 ========================================================================== */
 
@@ -1188,7 +1294,7 @@ a:focus {
 .block-form {
     width: 100%;   
     .btn-big {
-        width: 227px;
+        width: 236px;
         margin-top: 30px;
     }
 }
@@ -1239,7 +1345,7 @@ a:focus {
             }
         }
 
-        .flat-shadow-right(@width:8px, @height:242px, @color:#e7e7d7);
+        .flat-shadow-right(@width:8px, @height:228px, @color:#e7e7d7);
     }
 
     li:first-child {
@@ -1250,7 +1356,7 @@ a:focus {
         margin-bottom: 5px;
     }
 
-    .ap-description {
+    .description {
         margin: 0;
         line-height: 16px;
         .scada;
@@ -1262,11 +1368,6 @@ a:focus {
 /* ==========================================================================
    Pagination
 ========================================================================== */
-
-.pagination,
-.sorting {
-    padding-top: 30px;
-}
 
 .pagination,
 .sorting,
