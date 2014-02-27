@@ -946,10 +946,16 @@ a:focus {
 }
 
 .slider-ap {
+    position: relative;
+    width: 658px;
+    height: 370px;
     border: 6px solid @white;
-    img {
-        display: block;
-    }
+}
+
+.slide-ap-1-big {
+    background-image: url(../img/ap-big-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .block-ap-type,
@@ -1394,6 +1400,86 @@ a:focus {
     span {
         margin-left: -8px;
         background-position: -6px 0;
+    }
+}
+
+/* Vertical Carousel
+========================================================================== */
+
+.v-jcarousel-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 206px;
+    height: 100%;
+    background-color: rgb(56, 56, 56);
+    background-color: rgba(56, 56, 56, .85);
+}
+
+.v-jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.v-jcarousel ul {
+    height: 325px;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: 166px;
+        height: 102px;
+        margin-top: 7px;
+        margin-left: 20px;
+    }
+
+    a {
+        display: block;
+        height: auto !important;
+        max-width: 100%;
+    }
+}
+
+.v-jcarousel-control-prev,
+.v-jcarousel-control-next {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    bottom: 8px;
+    line-height: 26px;
+    background-color: #f4f4f4;
+
+    span {
+        .inline-block;
+        width: 13px;
+        height: 6px;
+        margin-bottom: 4px;
+        background-repeat: no-repeat;
+    }
+}
+
+.v-jcarousel-control-prev {
+    left: 65px;
+    span {
+        background-image: url(../img/arrow-up.png);
+    }
+}
+
+.v-jcarousel-control-next {
+    right: 65px;
+    span {
+        background-image: url(../img/arrow-down.png);
+    }
+}
+
+.slide-ap {
+    img {
+        display: block;
     }
 }
 
