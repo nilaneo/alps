@@ -863,7 +863,8 @@ img {
 ========================================================================== */
 .main-content {
   width: 670px;
-  padding: 60px 0 30px;
+  padding: 60px 0 1030px;
+  margin-bottom: -1000px;
 }
 .slider-ap {
   position: relative;
@@ -1232,7 +1233,8 @@ img {
 ========================================================================== */
 .sidebar {
   width: 230px;
-  padding: 40px 10px 60px;
+  padding: 40px 10px 1060px;
+  margin-bottom: -1000px;
   background-color: #ffffd7;
 }
 .list-featured-ap li {
@@ -1645,6 +1647,7 @@ img {
   width: 100%;
   height: 100%;
   background: red;
+  overflow: hidden;
 }
 .sl-container .sl-placeholder-container {
   position: relative;
