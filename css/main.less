@@ -432,6 +432,16 @@ img {
     background: url(../img/arrow-right.png) no-repeat;
 }
 
+.arrow-down {
+    .inline-block;
+    width: 13px;
+    height: 6px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    background: url(../img/arrow-down.png) no-repeat;
+}
+
 .block-angled {
     position: relative;
     border-top: 1px solid #afafaf;
@@ -1307,6 +1317,10 @@ img {
         color: @gray;
         font-size: 16px;
         text-transform: uppercase;
+
+        span {
+            .arrow-right;
+        }
     }
 
     .answer {
@@ -1316,8 +1330,16 @@ img {
         margin-top: 10px;
     }
 
-    .answer.is-open {
+    .is-open.answer {
         display: block;
+    }
+
+    .is-open {
+        .question {
+            span {
+                .arrow-down;
+            }
+        }        
     }
 }
 
@@ -1365,6 +1387,12 @@ img {
         line-height: 34px;
     }
 }
+
+/* ==========================================================================
+   Popup
+========================================================================== */
+
+
 
 /* ==========================================================================
     Form

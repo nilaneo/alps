@@ -288,6 +288,18 @@ img {
   vertical-align: middle;
   background: url(../img/arrow-right.png) no-repeat;
 }
+.arrow-down {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 13px;
+  height: 6px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  background: url(../img/arrow-down.png) no-repeat;
+}
 .block-angled {
   position: relative;
   border-top: 1px solid #afafaf;
@@ -1202,6 +1214,18 @@ img {
   font-size: 16px;
   text-transform: uppercase;
 }
+.list-questions .question span {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 6px;
+  height: 13px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  background: url(../img/arrow-right.png) no-repeat;
+}
 .list-questions .answer {
   display: none;
   margin: 0;
@@ -1211,8 +1235,20 @@ img {
   font-family: "Scada", sans-serif;
   margin-top: 10px;
 }
-.list-questions .answer.is-open {
+.list-questions .is-open.answer {
   display: block;
+}
+.list-questions .is-open .question span {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 13px;
+  height: 6px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  background: url(../img/arrow-down.png) no-repeat;
 }
 /* ==========================================================================
    FOOTER
@@ -1265,6 +1301,9 @@ img {
 .block-contacts-footer li {
   line-height: 34px;
 }
+/* ==========================================================================
+   Popup
+========================================================================== */
 /* ==========================================================================
     Form
 ========================================================================== */
