@@ -1621,7 +1621,7 @@ img {
     Custom select box
 ========================================================================== */
 .select-box {
-  height: 17px;
+  height: 27px;
   display: inline-block;
   *display: block;
   zoom: 1;
