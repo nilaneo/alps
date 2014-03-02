@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic);
+
 @import url(http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic);
 /* ==========================================================================
     FONTS
@@ -11,6 +12,7 @@
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 /* ==========================================================================
     GENERAL STYLES
@@ -59,6 +61,7 @@ img {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
+
 }
 .clearfix:after {
   clear: both;
@@ -68,6 +71,10 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
+}
+.center {
+  margin: 0 auto;
 }
 .pdt-10 {
   padding-top: 10px !important;
@@ -83,6 +90,9 @@ img {
 }
 .border-top {
   border-top: 1px solid #afaf97;
+}
+.no-mg {
+  margin: 0 !important;
 }
 .text-big.border-top {
   padding-top: 20px;
@@ -107,6 +117,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
   background-image: url(../img/sprite-icons.png);
   background-repeat: no-repeat;
@@ -240,11 +251,24 @@ img {
   margin: 20px 15px 0 0;
   background-position: -19px -85px;
 }
+.i-cross {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+
+  width: 12px;
+  height: 11px;
+  margin-top: 2px;
+  background: url(../img/cross.png) no-repeat;
+  vertical-align: middle;
+}
 .icon-wrapper {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -281,6 +305,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -293,6 +318,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -322,6 +348,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -346,6 +373,9 @@ img {
   border-width: 38px 7px 0 0;
   border-color: #d7d7d7 transparent transparent transparent;
 }
+.page-wrpapper {
+  position: relative;
+}
 /* ==========================================================================
     HEADER
 ========================================================================== */
@@ -365,6 +395,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .icons-social {
   margin-left: 25px;
@@ -377,6 +408,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin: -25px 0 0 15px;
 }
 .languages a {
@@ -384,6 +416,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 25px;
   height: 54px;
   padding: 25px 0 0 5px;
@@ -412,6 +445,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 180px;
   height: 64px;
   margin-top: 10px;
@@ -434,6 +468,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 41px;
   line-height: 40px;
   color: #383838;
@@ -533,6 +568,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin-top: 5px;
   font-size: 14px;
   color: #0ca26b;
@@ -583,6 +619,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -625,7 +662,7 @@ img {
   display: block;
   margin-bottom: 4px;
   color: #f7f7f7;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Scada', sans-serif;
 }
 .text-decorated {
@@ -640,6 +677,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 17px;
   height: 7px;
   margin-bottom: 3px;
@@ -879,6 +917,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 5px 10px;
   margin-right: 5px;
   background-color: #e0e0e0;
@@ -914,6 +953,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -956,6 +996,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 47%;
   vertical-align: top;
 }
@@ -980,6 +1021,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   content: "";
   width: 4px;
   height: 10px;
@@ -991,6 +1033,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 145px;
   margin-right: 8px;
 }
@@ -1008,6 +1051,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   content: "";
   width: 4px;
   height: 10px;
@@ -1033,6 +1077,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   position: relative;
   padding: 5px 10px;
   background-color: #383838;
@@ -1058,12 +1103,14 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .list-share li {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin-left: 15px;
 }
 .list-share li a {
@@ -1089,6 +1136,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
 }
 .ap-owner {
@@ -1130,6 +1178,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding-left: 20px;
   border-left: 1px solid #afafaf;
   margin-left: 20px;
@@ -1140,6 +1189,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 24px;
   padding: 0 8px;
   margin-left: 5px;
@@ -1219,6 +1269,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -1228,12 +1279,13 @@ img {
 }
 .list-questions .answer {
   display: none;
+  margin-top: 10px;
+  color: #383838;
   margin: 0;
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
   font-family: "Scada", sans-serif;
-  margin-top: 10px;
 }
 .list-questions .is-open.answer {
   display: block;
@@ -1243,6 +1295,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -1304,6 +1357,61 @@ img {
 /* ==========================================================================
    Popup
 ========================================================================== */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -257px;
+  margin-left: -270px;
+  width: 440px;
+  height: 484px;
+  padding: 15px 70px;
+  background-color: #3b3b3a;
+}
+.popup:after {
+  position: absolute;
+  bottom: 0;
+  right: -16px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 494px 16px 0 0;
+  border-color: #d2d2d2 transparent transparent transparent;
+}
+.popup h3 {
+  color: #f4f4f4 !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.popup h3 .icon {
+  vertical-align: baseline;
+  margin-right: 5px;
+}
+.popup .btn-big {
+  margin-top: 12px !important;
+  font-family: 'Cuprum', sans-serif;
+}
+.additional-info {
+  font-size: 12px;
+  margin-top: 3px;
+  color: #f4f4f4 !important;
+  font-family: "Scada", sans-serif;
+}
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  width: 30px;
+  height: 21px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
 /* ==========================================================================
     Form
 ========================================================================== */
@@ -1331,15 +1439,6 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.input-dark {
-  background-color: #979898;
-  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-.input-long {
-  width: 590px;
-}
 .textarea-primary {
   width: 100%;
   height: 30px;
@@ -1358,6 +1457,22 @@ img {
   box-sizing: border-box;
   height: 150px;
   resize: none;
+}
+.input-dark {
+  background-color: #979898;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.input-long {
+  width: 590px;
+}
+.input-wrapper {
+  margin-bottom: 10px;
+}
+.input-wrapper .input-primary,
+.input-wrapper .textarea-primary {
+  margin-top: 0;
 }
 /* ==========================================================================
    Sidebar
@@ -1436,6 +1551,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1461,6 +1577,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1489,6 +1606,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 22px;
   line-height: 22px;
   padding: 0 10px;
@@ -1542,6 +1660,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1614,6 +1733,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px;
   margin-bottom: 4px;
@@ -1668,6 +1788,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1691,6 +1812,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1714,6 +1836,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1737,6 +1860,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1757,15 +1881,20 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .select-search-filter {
   width: 150px;
+}
+.select-adaptive {
+  width: 100%;
 }
 .sl-button {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
