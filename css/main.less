@@ -713,6 +713,10 @@ img {
     color: @green;
     font-size: 14px;
     text-decoration: underline;
+
+    &:hover {
+        color: darken(@green, 10%);
+    }
 }
 
 .list-links {
@@ -1715,10 +1719,11 @@ img {
 .v-jcarousel {
     position: relative;
     overflow: hidden;
+    margin-top: 7px;
 }
 
 .v-jcarousel ul {
-    height: 325px;
+    height: 320px;
     position: relative;
     list-style: none;
     margin: 0;
@@ -1727,7 +1732,7 @@ img {
     li {
         width: 166px;
         height: 102px;
-        margin-top: 7px;
+        margin-bottom: 7px;
         margin-left: 20px;
     }
 

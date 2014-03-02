@@ -580,10 +580,16 @@ img {
   font-size: 14px;
   text-decoration: underline;
 }
+.lnk-small:hover {
+  color: #08734c;
+}
 .list-links a {
   color: #0ca26b;
   font-size: 14px;
   text-decoration: underline;
+}
+.list-links a:hover {
+  color: #08734c;
 }
 .lnk-print {
   color: #383838;
@@ -1696,9 +1702,10 @@ img {
 .v-jcarousel {
   position: relative;
   overflow: hidden;
+  margin-top: 7px;
 }
 .v-jcarousel ul {
-  height: 325px;
+  height: 320px;
   position: relative;
   list-style: none;
   margin: 0;
@@ -1707,7 +1714,7 @@ img {
 .v-jcarousel ul li {
   width: 166px;
   height: 102px;
-  margin-top: 7px;
+  margin-bottom: 7px;
   margin-left: 20px;
 }
 .v-jcarousel ul a {
