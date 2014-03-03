@@ -164,6 +164,16 @@ a:focus {
     outline: none;
 }
 
+::selection { 
+    background-color: @green;
+    color: @white;
+} 
+
+::-moz-selection { 
+    background-color: @green;
+    color: @white;
+}
+
 img {
     display: block;
 }
@@ -1100,7 +1110,7 @@ img {
     position: absolute;
     top: 0;
     right: -208px;
-    .transition(right ease-out .4s);
+    .transition(all ease-out .2s);
 }
 
 .slider-ap:hover {
@@ -1515,6 +1525,13 @@ img {
 /* ==========================================================================
    LEGAL INFO
 ========================================================================== */
+
+.list-2-cols {
+    .left,
+    .right {
+        .half;
+    }
+}
 
 .list-links-big {
     margin-bottom: 10px;

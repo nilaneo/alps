@@ -42,6 +42,14 @@ a {
 a:focus {
   outline: none;
 }
+::selection {
+  background-color: #0ca26b;
+  color: #ffffff;
+}
+::-moz-selection {
+  background-color: #0ca26b;
+  color: #ffffff;
+}
 img {
   display: block;
 }
@@ -951,11 +959,11 @@ img {
   position: absolute;
   top: 0;
   right: -208px;
-  -webkit-transition: right ease-out 0.4s;
-  -moz-transition: right ease-out 0.4s;
-  -ms-transition: right ease-out 0.4s;
-  -o-transition: right ease-out 0.4s;
-  transition: right ease-out 0.4s;
+  -webkit-transition: all ease-out 0.2s;
+  -moz-transition: all ease-out 0.2s;
+  -ms-transition: all ease-out 0.2s;
+  -o-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
 }
 .slider-ap:hover .slider-ap-small {
   right: 0;
@@ -1414,6 +1422,13 @@ img {
 /* ==========================================================================
    LEGAL INFO
 ========================================================================== */
+.list-2-cols .left,
+.list-2-cols .right {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .list-links-big {
   margin-bottom: 10px;
 }
