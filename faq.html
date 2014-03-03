@@ -80,8 +80,8 @@
                 </nav>
             </header>
             <div class="main bg-light">
-                <div class="container clearfix">
-                    <aside class="sidebar left">
+                <div class="container container-cols">
+                    <aside class="sidebar">
                         <h3 class="text-big text-dark">FAQ categories:</h3>
                         <ul class="list-links list-big">
                             <li>
@@ -109,12 +109,51 @@
                         <p class="scada text-dark">
                             Вам так и не удалось разобраться, что делать?... Не беда. Задайте нам вопрос. Мы Вам обязательно подскажем.
                         </p>
-                        <a href="#0" class="btn-wide j-btn-ask">
-                            <span class="icon i-envelope-white"></span>
-                            Ask question
-                        </a>
+                        <div class="ask-wrap">
+                            <a href="#0" class="btn-wide j-btn-ask">
+                                <span class="icon i-envelope-white"></span>
+                                Ask question
+                            </a>
+                            <div class="popup">
+                                <a href="#0" class="btn-close j-btn-close">
+                                    <span class="i-cross"></span>
+                                </a>
+                                <h3>
+                                    <span class="icon i-envelope-white"></span>
+                                    Ask question
+                                </h3>
+                                <div class="block-form">
+                                    <div class="input-wrapper">
+                                        <label class="label-primary">Name*</label>
+                                        <input type="text" class="input-primary input-dark">
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <label class="label-primary">Email*</label>
+                                        <input type="text" class="input-primary input-dark">
+                                    </div>
+                                    <div class="input-wrapper select-wrapper">
+                                        <label class="label-primary">Location</label>
+                                        <div class="select-box select-adaptive">
+                                            <select>
+                                                <option selected value="Variant1">Variant1</option>
+                                                <option value="variant2">variant2</option>
+                                                <option value="variant3">variant3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-wrapper no-mg">
+                                        <label class="label-primary">Question</label>
+                                        <textarea class="textarea-primary input-dark"></textarea>
+                                        <p class="additional-info">
+                                            *Your email address will not be published. Required fields are marked
+                                        </p>
+                                    </div>
+                                    <button type="submit" class="btn-big btn-send center">Send question</button>
+                                </div><!-- end of block-form -->
+                            </div><!-- end of popup -->
+                        </div>
                     </aside>
-                    <div class="main-content right">
+                    <div class="main-content main-content-right">
                         <div class="search-box">
                             <a href="#0" class="icon i-search"></a>
                             <input type="text" class="input-primary input-dark input-long">
@@ -366,43 +405,6 @@
                 </div><!-- end of block-hot -->
             </div><!-- end of main -->
 
-            <div class="popup">
-                <a href="#0" class="btn-close j-btn-close">
-                    <span class="i-cross"></span>
-                </a>
-                <h3>
-                    <span class="icon i-envelope-white"></span>
-                    Ask question
-                </h3>
-                <div class="block-form">
-                    <div class="input-wrapper">
-                        <label class="label-primary">Name*</label>
-                        <input type="text" class="input-primary input-dark">
-                    </div>
-                    <div class="input-wrapper">
-                        <label class="label-primary">Email*</label>
-                        <input type="text" class="input-primary input-dark">
-                    </div>
-                    <div class="input-wrapper select-wrapper">
-                        <label class="label-primary">Location</label>
-                        <div class="select-box select-adaptive">
-                            <select>
-                                <option selected value="Variant1">Variant1</option>
-                                <option value="variant2">variant2</option>
-                                <option value="variant3">variant3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="input-wrapper no-mg">
-                        <label class="label-primary">Question</label>
-                        <textarea class="textarea-primary input-dark"></textarea>
-                        <p class="additional-info">
-                            *Your email address will not be published. Required fields are marked
-                        </p>
-                    </div>
-                    <button type="submit" class="btn-big btn-send center">Send question</button>
-                </div><!-- end of block-form -->
-            </div><!-- end of popup -->
         </div><!-- end of page-wrapper -->
         <footer class="footer">
             <div class="container clearfix">

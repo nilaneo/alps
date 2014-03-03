@@ -234,7 +234,6 @@ img {
 .container {
     width: 940px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 
@@ -1080,13 +1079,19 @@ img {
 
 .main-content {
     width: 670px;
-    padding: 60px 0 10030px;
-    margin-bottom: -10000px;
+    padding: 60px 0 30px;
+}
+
+.main-content-left {
+    padding-right: 30px;
+}
+
+.main-content-right {
+    padding-left: 30px;
 }
 
 .slider-ap {
     position: relative;
-    width: 658px;
     height: 370px;
 }
 
@@ -1244,7 +1249,7 @@ img {
 .block-ap-contacts {
     padding-bottom: 30px;
     .right {
-        width: 250px;
+        width: 242px;
     }
 }
 
@@ -1370,13 +1375,18 @@ img {
     }
 }
 
+.ask-wrap {
+    position: relative;
+    overflow: visible;
+}
+
 .search-box {
     position: relative;
     height: 64px;
     padding: 6px 15px 0;
     margin-bottom: 30px;
     .block-dark;
-    .flat-shadow-right(@width:10px, @height:56px, @color:red);
+    .flat-shadow-right(@width:10px, @height:56px, @color:#d2d2d2);
 }
 
 .list-questions {
@@ -1586,15 +1596,14 @@ img {
 
 .popup {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -262px;
-    margin-left: -270px;
+    top: 0;
+    left: 0;
     width: 440px;
     height: 494px;
     padding: 15px 70px;
     .block-dark;
     .flat-shadow-right(@width:16px, @height:494px, @color:#d2d2d2);
+    z-index: 10;
 
     h3 {
         .text-light;
@@ -1640,7 +1649,7 @@ img {
 .block-form {
     width: 100%;
     .btn-big {
-        width: 236px;
+        width: 230px;
         margin-top: 30px;
     }
 }
@@ -1688,9 +1697,20 @@ img {
 
 .sidebar {
     width: 230px;
-    padding: 40px 10px 10060px;
-    margin-bottom: -10000px;
+    padding: 40px 15px 60px 10px;
     background-color: #ffffd7;
+    .box-sizing;
+}
+
+.sidebar,
+.main-content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.container-cols {
+    display: table;
+    .box-sizing;
 }
 
 .list-featured-ap {
@@ -2021,7 +2041,6 @@ img {
     float: left;
     width: 100%;
     height: 100%;
-    background: red;
     overflow: hidden;
 
     .sl-placeholder-container {
