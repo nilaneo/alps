@@ -14,4 +14,13 @@ $(function() {
 		e.preventDefault();
 		$(".popup").show();
 	});
+
+	// Slider-ap
+
+	$(".slide-ap").on("click", function (e) {
+		e.preventDefault();
+		var activeSlide = $(this).data("slide-small");
+		$(".slides-ap-big li").hide();
+		$(".slides-ap-big").find("." + activeSlide + "-big").fadeIn();
+	});
 });

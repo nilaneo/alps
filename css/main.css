@@ -574,7 +574,7 @@ img {
 }
 .lnk-small {
   color: #0ca26b;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: underline;
 }
 .lnk-small:hover {
@@ -582,7 +582,7 @@ img {
 }
 .list-links a {
   color: #0ca26b;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: underline;
 }
 .list-links a:hover {
@@ -945,11 +945,37 @@ img {
 .slider-ap {
   position: relative;
   height: 370px;
+  overflow: hidden;
 }
-.slide-ap-1-big {
-  background-image: url(../img/ap-big-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.slider-ap-small {
+  position: absolute;
+  top: 0;
+  right: -208px;
+  -webkit-transition: right ease-out 0.4s;
+  -moz-transition: right ease-out 0.4s;
+  -ms-transition: right ease-out 0.4s;
+  -o-transition: right ease-out 0.4s;
+  transition: right ease-out 0.4s;
+}
+.slider-ap:hover .slider-ap-small {
+  right: 0;
+}
+.slides-ap-big {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.slides-ap-big li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slides-ap-big li:first-child {
+  display: block;
 }
 .block-ap-type,
 .block-ap-price {
@@ -1325,6 +1351,7 @@ img {
   margin-bottom: 5px;
   vertical-align: middle;
   background: url(../img/arrow-down.png) no-repeat;
+  margin-right: 1px;
 }
 /* ==========================================================================
    CONTACTS
@@ -1430,7 +1457,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows.png);
+  background-image: url(../img/sprite-arrows-white.png);
   background-repeat: no-repeat;
 }
 .list-links-big li span {
@@ -1574,7 +1601,7 @@ img {
   left: 0;
   width: 440px;
   height: 494px;
-  padding: 15px 70px;
+  padding: 15px 60px;
   background-color: #3b3b3a;
   z-index: 10;
 }
@@ -1593,6 +1620,7 @@ img {
 .popup h3 {
   color: #f4f4f4 !important;
   font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   font-weight: normal;
   margin: 0;
@@ -1800,7 +1828,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows.png);
+  background-image: url(../img/sprite-arrows-white.png);
   background-repeat: no-repeat;
 }
 .btn-prev {
@@ -1881,7 +1909,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows.png);
+  background-image: url(../img/sprite-arrows-white.png);
   background-repeat: no-repeat;
 }
 .jcarousel-control-prev {
@@ -1903,9 +1931,6 @@ img {
 /* Vertical Carousel
 ========================================================================== */
 .v-jcarousel-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 206px;
   height: 100%;
   background-color: #383838;
@@ -1991,7 +2016,7 @@ img {
   position: absolute;
   display: inline-block;
   width: 30px;
-  height: 24px;
+  line-height: 27px;
   top: 32%;
 }
 .slider-small .jcarousel-control-prev-small {
@@ -2031,7 +2056,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows.png);
+  background-image: url(../img/sprite-arrows-white.png);
   background-repeat: no-repeat;
 }
 .slider-small .jcarousel-control-prev-small span {
@@ -2077,7 +2102,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows.png);
+  background-image: url(../img/sprite-arrows-white.png);
   background-repeat: no-repeat;
 }
 .slider-small .jcarousel-control-next-small span {
