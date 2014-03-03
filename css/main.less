@@ -1289,17 +1289,32 @@ img {
 .new-info {
     margin-top: 12px;
     .scada;
+
+    ul {
+        .list-inline;
+
+        li {
+            &:before {
+                .inline-block;
+                width: 0;
+                height: 18px;
+                border-left: 1px solid #afafaf;
+                margin: 0 15px;
+                content: "";
+                vertical-align: text-bottom;
+            }
+        }
+
+        li:first-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
 }
 
 .new-content {
     width: 365px;
-}
-
-.new-author {
-    .inline-block;
-    padding-left: 20px;
-    border-left: 1px solid #afafaf;
-    margin-left: 20px;
 }
 
 .news-place {
@@ -1315,7 +1330,22 @@ img {
     text-transform: uppercase;
     text-decoration: underline;
     .triangle-left(5px, 10px, @green);
+}
 
+.picture-wrapper {
+    .box-sizing;
+    padding: 5px;
+    border: 1px solid #a5a5a5;
+    margin-top: 15px;  
+    img {
+        display: block;
+    } 
+}
+
+.description-full {
+   padding-bottom: 25px;
+   border-bottom: 1px solid #a5a5a5;
+   margin-bottom: 15px; 
 }
 
 /* ==========================================================================
@@ -1449,6 +1479,7 @@ img {
 ========================================================================== */
 
 .list-links-big {
+    margin-bottom: 10px;
    li {
         width: 310px;
         float: left;
@@ -1473,8 +1504,8 @@ img {
 
 .block-info {
     position: relative;
-    padding: 20px 10px;
-    margin: 10px 0 40px;
+    padding: 15px 10px;
+    margin: 0 0 40px;
     .box-sizing;
 
     p {
@@ -1494,6 +1525,14 @@ img {
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+}
+
+.title-part {
+    .share;
+    margin: 0 0 20px 5px;
+    font-family: "Cuprum", sans-serif;
+    text-transform: uppercase;
+    .triangle-left(5px, 10px, @gray);
 }
 
 /* ==========================================================================
@@ -1546,7 +1585,7 @@ img {
 ========================================================================== */
 
 .popup {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -262px;

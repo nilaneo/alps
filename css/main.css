@@ -1162,17 +1162,29 @@ img {
   margin-top: 12px;
   font-family: "Scada", sans-serif;
 }
-.new-content {
-  width: 365px;
-}
-.new-author {
+.new-info ul li {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-  padding-left: 20px;
+}
+.new-info ul li:before {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 0;
+  height: 18px;
   border-left: 1px solid #afafaf;
-  margin-left: 20px;
+  margin: 0 15px;
+  content: "";
+  vertical-align: text-bottom;
+}
+.new-info ul li:first-child:before {
+  display: none;
+}
+.new-content {
+  width: 365px;
 }
 .news-place {
   position: relative;
@@ -1202,6 +1214,22 @@ img {
   border-style: solid;
   border-width: 5px 5px 5px 0;
   border-color: transparent #0ca26b transparent transparent;
+}
+.picture-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #a5a5a5;
+  margin-top: 15px;
+}
+.picture-wrapper img {
+  display: block;
+}
+.description-full {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #a5a5a5;
+  margin-bottom: 15px;
 }
 /* ==========================================================================
     FAQ
@@ -1352,6 +1380,9 @@ img {
 /* ==========================================================================
    LEGAL INFO
 ========================================================================== */
+.list-links-big {
+  margin-bottom: 10px;
+}
 .list-links-big li {
   width: 310px;
   float: left;
@@ -1413,8 +1444,8 @@ img {
 }
 .block-info {
   position: relative;
-  padding: 20px 10px;
-  margin: 10px 0 40px;
+  padding: 15px 10px;
+  margin: 0 0 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1434,6 +1465,47 @@ img {
   font-size: 12px;
   line-height: 20px;
   text-align: center;
+}
+.title-part {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  position: relative;
+  padding: 5px 10px;
+  background-color: #383838;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Scada", sans-serif;
+  margin: 0 0 20px 5px;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+}
+.title-part:after {
+  right: -5px;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #383838;
+}
+.title-part:after {
+  left: -5px;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent #383838 transparent transparent;
 }
 /* ==========================================================================
    FOOTER
@@ -1490,7 +1562,7 @@ img {
    Popup
 ========================================================================== */
 .popup {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -262px;
