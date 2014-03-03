@@ -108,6 +108,15 @@ img {
 .container-wider .container {
   margin: 0 auto;
 }
+.overflowed {
+  overflow: visible;
+}
+.half {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .icon {
   display: inline-block;
   *display: block;
@@ -200,6 +209,11 @@ img {
   width: 21px;
   height: 18px;
   background-position: -11px -39px;
+}
+.i-envelope-black {
+  width: 21px;
+  height: 17px;
+  background-position: -43px -89px;
 }
 .i-skype-white {
   width: 24px;
@@ -586,6 +600,9 @@ img {
 .text-dark {
   color: #383838;
 }
+.text-green {
+  color: #0ca26b;
+}
 .text-big {
   color: #383838;
   font-size: 18px;
@@ -656,9 +673,6 @@ img {
 }
 .text-decorated {
   margin: 0;
-  font-size: 18px;
-  font-weight: normal;
-  text-transform: uppercase;
 }
 .text-decorated:before,
 .text-decorated:after {
@@ -712,6 +726,10 @@ img {
   border-style: solid;
   border-width: 19px 0 19px 12px;
   border-color: transparent transparent transparent #0ca26b;
+}
+.btn-send {
+  margin-top: 20px;
+  font-family: 'Cuprum', sans-serif;
 }
 /* Block-results
 ========================================================================== */
@@ -1274,6 +1292,64 @@ img {
   background: url(../img/arrow-down.png) no-repeat;
 }
 /* ==========================================================================
+   CONTACTS
+========================================================================== */
+.contacts-main {
+  padding-top: 50px;
+}
+.contacts-main .left {
+  padding-right: 40px;
+}
+.contacts-main p {
+  font-family: "Scada", sans-serif;
+}
+.contacts-info {
+  margin-top: 10px;
+}
+.list-contacts-main {
+  list-style: none;
+}
+.list-contacts-main li {
+  margin-bottom: 15px;
+  font-family: "Scada", sans-serif;
+}
+.list-contacts-main li a {
+  color: #383838;
+  text-decoration: underline;
+  font-family: "Scada", sans-serif;
+}
+.contact-form {
+  position: relative;
+  height: 322px;
+  padding: 20px 10px;
+  margin: 30px 0;
+  background-color: #3b3b3a;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contact-form:after {
+  position: absolute;
+  bottom: 0;
+  right: -16px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 286px 16px 0 0;
+  border-color: #d7d7d7 transparent transparent transparent;
+}
+.contact-form h3 {
+  margin-top: 0;
+}
+.contact-form .left {
+  width: 440px;
+}
+.contact-form .right {
+  width: 450px;
+}
+/* ==========================================================================
    FOOTER
 ========================================================================== */
 .footer {
@@ -1331,10 +1407,10 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -257px;
+  margin-top: -262px;
   margin-left: -270px;
   width: 440px;
-  height: 484px;
+  height: 494px;
   padding: 15px 70px;
   background-color: #3b3b3a;
 }
@@ -1364,7 +1440,6 @@ img {
 }
 .popup .btn-big {
   margin-top: 12px !important;
-  font-family: 'Cuprum', sans-serif;
 }
 .additional-info {
   font-size: 12px;
@@ -1425,7 +1500,7 @@ img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 150px;
+  height: 160px;
   resize: none;
 }
 .input-dark {

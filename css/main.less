@@ -237,6 +237,7 @@ img {
     overflow: hidden;
 }
 
+
 .container-wider {
     width: 976px;
     margin: 0 auto;
@@ -244,6 +245,15 @@ img {
     .container {
         margin: 0 auto;
     }
+}
+
+.overflowed {
+    overflow: visible;
+}
+
+.half {
+    width: 50%;
+    .box-sizing;
 }
 
 .icon {
@@ -351,6 +361,12 @@ img {
     width: 21px;
     height: 18px;
     background-position: -11px -39px;
+}
+
+.i-envelope-black {
+    width: 21px;
+    height: 17px;
+    background-position: -43px -89px;
 }
 
 .i-skype-white {
@@ -739,6 +755,10 @@ img {
     color: @gray;
 }
 
+.text-green {
+    color: @green;
+}
+
 .text-big {
     color: @gray;
     font-size: 18px;
@@ -798,9 +818,6 @@ img {
 
 .text-decorated {
     margin: 0;
-    font-size: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
 }
 
 .text-decorated:before,
@@ -857,6 +874,11 @@ img {
         border-width: 19px 0 19px 12px;
         border-color: transparent transparent transparent @green;
     }
+}
+
+.btn-send {
+    margin-top: 20px;
+    font-family: 'Cuprum', sans-serif;
 }
 
 /* Block-results
@@ -1368,6 +1390,61 @@ img {
 }
 
 /* ==========================================================================
+   CONTACTS
+========================================================================== */
+
+.contacts-main {
+    padding-top: 50px;
+    .left {
+        padding-right: 40px;
+    }
+
+    p {
+        .scada;
+    }
+}
+
+.contacts-info {
+    margin-top: 10px;
+}
+
+.list-contacts-main {
+    list-style: none;
+    li {
+        margin-bottom: 15px;
+        .scada;
+
+        a {
+            color: @gray;
+            text-decoration: underline;
+            .scada;
+        }
+    }
+}
+
+.contact-form {
+    position: relative;
+    height: 322px;
+    padding: 20px 10px;
+    margin: 30px 0;
+    .block-dark;
+    .flat-shadow-right(@width:16px, @height:286px, @color:#d7d7d7);
+    .box-sizing;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .left {
+        width: 440px;
+    }
+
+    .right {
+        width: 450px;
+    }
+}
+
+/* ==========================================================================
    FOOTER
 ========================================================================== */
 
@@ -1420,10 +1497,10 @@ img {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -257px;
+    margin-top: -262px;
     margin-left: -270px;
     width: 440px;
-    height: 484px;
+    height: 494px;
     padding: 15px 70px;
     .block-dark;
     .flat-shadow-right(@width:16px, @height:494px, @color:#d2d2d2);
@@ -1444,7 +1521,6 @@ img {
 
     .btn-big {
         margin-top: 12px !important;
-        font-family: 'Cuprum', sans-serif;
     }
 }
 
@@ -1494,7 +1570,7 @@ img {
 
 .textarea-primary {
     .input-primary;
-    height: 150px;
+    height: 160px;
     resize: none;
 }
 
