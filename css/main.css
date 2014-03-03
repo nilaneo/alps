@@ -1350,6 +1350,92 @@ img {
   width: 450px;
 }
 /* ==========================================================================
+   LEGAL INFO
+========================================================================== */
+.list-links-big li {
+  width: 310px;
+  float: left;
+  list-style: none;
+  color: #000000;
+  font-size: 14px;
+  margin: 0;
+  margin-right: 20px;
+}
+.list-links-big li span {
+  position: relative;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 30px;
+  height: 22px;
+  line-height: 24px;
+  background-color: #383838;
+  text-align: center;
+}
+.list-links-big li span:after {
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 20px 4px 0 0;
+  border-color: #d7d7d7 transparent transparent transparent;
+}
+.list-links-big li i {
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  /* IE < 8 */
+  width: 6px;
+  height: 13px;
+  background-image: url(../img/sprite-arrows.png);
+  background-repeat: no-repeat;
+}
+.list-links-big li span {
+  margin-left: 10px;
+}
+.list-links-big li i {
+  background-position: -6px 0;
+}
+.list-links-big li span {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.list-links-big li a {
+  color: #0ca26b;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 24px;
+}
+.block-info {
+  position: relative;
+  padding: 20px 10px;
+  margin: 10px 0 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.block-info p {
+  font-family: "Scada", sans-serif;
+}
+.lnk-more {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  display: block;
+  width: 70px;
+  height: 20px;
+  background-color: #d2d2d2;
+  color: #000000;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+/* ==========================================================================
    FOOTER
 ========================================================================== */
 .footer {
