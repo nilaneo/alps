@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic);
-
 @import url(http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic);
 /* ==========================================================================
     FONTS
@@ -12,7 +11,6 @@
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 /* ==========================================================================
     GENERAL STYLES
@@ -61,7 +59,6 @@ img {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
-
 }
 .clearfix:after {
   clear: both;
@@ -71,7 +68,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .center {
   margin: 0 auto;
@@ -117,7 +113,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
   background-image: url(../img/sprite-icons.png);
   background-repeat: no-repeat;
@@ -256,7 +251,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 12px;
   height: 11px;
   margin-top: 2px;
@@ -268,7 +262,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -305,7 +298,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -318,7 +310,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -348,7 +339,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -395,7 +385,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .icons-social {
   margin-left: 25px;
@@ -408,7 +397,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   margin: -25px 0 0 15px;
 }
 .languages a {
@@ -416,7 +404,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 25px;
   height: 54px;
   padding: 25px 0 0 5px;
@@ -445,7 +432,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 180px;
   height: 64px;
   margin-top: 10px;
@@ -468,7 +454,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 41px;
   line-height: 40px;
   color: #383838;
@@ -568,7 +553,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   margin-top: 5px;
   font-size: 14px;
   color: #0ca26b;
@@ -625,7 +609,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -683,7 +666,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 17px;
   height: 7px;
   margin-bottom: 3px;
@@ -878,11 +860,7 @@ img {
 }
 .map-wrapper {
   margin-top: 8px;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ffffff;
+  border: 10px solid #ffffff;
 }
 /* Block-hot
 ========================================================================== */
@@ -923,7 +901,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   padding: 5px 10px;
   margin-right: 5px;
   background-color: #e0e0e0;
@@ -959,7 +936,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -1002,7 +978,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 47%;
   vertical-align: top;
 }
@@ -1027,7 +1002,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   content: "";
   width: 4px;
   height: 10px;
@@ -1039,7 +1013,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 145px;
   margin-right: 8px;
 }
@@ -1057,7 +1030,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   content: "";
   width: 4px;
   height: 10px;
@@ -1083,7 +1055,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   position: relative;
   padding: 5px 10px;
   background-color: #383838;
@@ -1109,14 +1080,12 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .list-share li {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   margin-left: 15px;
 }
 .list-share li a {
@@ -1142,7 +1111,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
 }
 .ap-owner {
@@ -1184,7 +1152,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   padding-left: 20px;
   border-left: 1px solid #afafaf;
   margin-left: 20px;
@@ -1195,7 +1162,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 24px;
   padding: 0 8px;
   margin-left: 5px;
@@ -1275,7 +1241,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -1301,7 +1266,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -1557,7 +1521,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1583,7 +1546,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1612,7 +1574,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 22px;
   line-height: 22px;
   padding: 0 10px;
@@ -1666,7 +1627,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1740,7 +1700,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px;
   margin-bottom: 4px;
@@ -1795,7 +1754,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1819,7 +1777,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1843,7 +1800,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1867,7 +1823,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-arrows.png);
@@ -1888,7 +1843,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .select-search-filter {
   width: 150px;
@@ -1901,7 +1855,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
@@ -1981,6 +1934,7 @@ img {
 .select-sort {
   width: 98px;
   margin: 0 15px;
+  vertical-align: middle;
 }
 .select-sort .sl-placeholder-container {
   background: #cfcfcf;
