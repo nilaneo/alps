@@ -1157,8 +1157,24 @@ img {
   background: url(../img/ar-green-big.png) no-repeat;
   vertical-align: middle;
 }
-.property-map img {
-  display: block;
+.property-map-wrapper {
+  position: relative;
+}
+.property-map-heading {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  background-color: #383838;
+  background-color: rgba(56, 56, 56, 0.85);
+  color: #f4f4f4;
+  z-index: 100;
+}
+#map-property {
+  height: 300px;
+  z-index: 1;
 }
 /* Block-share
 ========================================================================== */
@@ -1478,6 +1494,9 @@ img {
 }
 .contact-form .right {
   width: 450px;
+}
+#map-contacts {
+  height: 300px;
 }
 /* ==========================================================================
    LEGAL INFO

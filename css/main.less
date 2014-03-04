@@ -1286,12 +1286,27 @@ img {
     }
 }
 
-.property-map {
-    img {
-        display: block;
-    }
+.property-map-wrapper {
+    position: relative;
 }
 
+.property-map-heading {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    background-color: rgb(56, 56, 56);
+    background-color: rgba(56, 56, 56, .85);
+    color: #f4f4f4;
+    z-index: 100;
+}
+
+#map-property {
+    height: 300px;
+    z-index: 1;
+}
 
 /* Block-share
 ========================================================================== */
@@ -1569,6 +1584,10 @@ img {
     .right {
         width: 450px;
     }
+}
+
+#map-contacts {
+    height: 300px;
 }
 
 /* ==========================================================================

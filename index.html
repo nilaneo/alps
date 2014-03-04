@@ -17,71 +17,99 @@
         <script type="text/javascript"
           src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
         </script>
+        
         <script type="text/javascript">
-          function initialize() {
-            var mapOptions = {
-                zoom: 10,
-                center: new google.maps.LatLng(-33.9, 151.2)
-            };
-            var map = new google.maps.Map(document.getElementById("map-main"),
-                mapOptions);
-            setMarkers(map, houses);
-          }
+            markers = new Array();
+              function initialize() {
+                var mapOptions = {
+                    zoom: 10,
+                    center: new google.maps.LatLng(-33.9, 151.2)
+                };
+                var map = new google.maps.Map(document.getElementById("map-main"),
+                    mapOptions);
+                setMarkers(map, houses);
+              }
 
-        var houses = [
-          ['Bondi Beach', -33.890542, 151.274856, 4],
-          ['Coogee Beach', -33.923036, 151.259052, 5],
-          ['Cronulla Beach', -34.028249, 151.157507, 3],
-          ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-          ['Maroubra Beach', -33.950198, 151.259302, 1]
-        ];
+            var houses = [
+              ['House1', -33.890542, 151.274856, 4, 'http://www.google.com/'],
+              ['House2', -33.923036, 151.259052, 5, 'http://maps.yandex.ua/'],
+              ['House3', -34.028249, 151.157507, 3, 'https://developers.google.com/'],
+              ['House4', -33.80010128657071, 151.28747820854187, 2, 'http://stackoverflow.com/'],
+              ['House5', -33.950198, 151.259302, 1, 'http://www.nytimes.com/']
 
-        function setMarkers(map, locations) {
-          // Add markers to the map
+            ];
 
-          // Marker sizes are expressed as a Size of X,Y
-          // where the origin of the image (0,0) is located
-          // in the top left of the image.
+            var image1 = {
+                url: "img/marker-house-black.png",
+                // This marker is 20 pixels wide by 32 pixels tall.
+                size: new google.maps.Size(30, 34),
+                // The origin for this image is 0,0.
+                origin: new google.maps.Point(0,0),
+                // The anchor for this image is the base of the flagpole at 0,32.
+                anchor: new google.maps.Point(0, 34)
+              };
 
-          // Origins, anchor positions and coordinates of the marker
-          // increase in the X direction to the right and in
+              var image2 = {
+                url: "img/marker-house-green.png",
+                // This marker is 20 pixels wide by 32 pixels tall.
+                size: new google.maps.Size(30, 34),
+                // The origin for this image is 0,0.
+                origin: new google.maps.Point(0,0),
+                // The anchor for this image is the base of the flagpole at 0,32.
+                anchor: new google.maps.Point(0, 34)
+              };
 
-          var icon1 = "img/marker-house-black.png",
-              icon2 = "img/marker-house-green.png";
-          // the Y direction down.
-          var image = {
-            url: icon1,
-            // This marker is 20 pixels wide by 32 pixels tall.
-            size: new google.maps.Size(30, 34),
-            // The origin for this image is 0,0.
-            origin: new google.maps.Point(0,0),
-            // The anchor for this image is the base of the flagpole at 0,32.
-            anchor: new google.maps.Point(0, 34)
-          };
-          // Shapes define the clickable region of the icon.
-          // The type defines an HTML &lt;area&gt; element 'poly' which
-          // traces out a polygon as a series of X,Y points. The final
-          // coordinate closes the poly by connecting to the first
-          // coordinate.
-          var shape = {
-              coord: [1, 1, 1, 20, 18, 20, 18 , 1],
-              type: 'poly'
-          };
-          for (var i = 0; i < locations.length; i++) {
-            var house = locations[i];
-            var myLatLng = new google.maps.LatLng(house[1], house[2]);
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                icon: image,
-                shape: shape,
-                title: house[0],
-                zIndex: house[3]
-            });
-          }
-        }
+            function setMarkers(map, locations) {
+              // Add markers to the map
 
-          google.maps.event.addDomListener(window, 'load', initialize);
+              // Marker sizes are expressed as a Size of X,Y
+              // where the origin of the image (0,0) is located
+              // in the top left of the image.
+
+              // Origins, anchor positions and coordinates of the marker
+              // increase in the X direction to the right and in          
+              // the Y direction down.
+              
+              // Shapes define the clickable region of the icon.
+              // The type defines an HTML &lt;area&gt; element 'poly' which
+              // traces out a polygon as a series of X,Y points. The final
+              // coordinate closes the poly by connecting to the first
+              // coordinate.
+              var shape = {
+                  coord: [1, 1, 1, 20, 18, 20, 18 , 1],
+                  type: 'poly'
+              };
+              
+              for (var i = 0; i < locations.length; i++) {
+                var house = locations[i];
+                var myLatLng = new google.maps.LatLng(house[1], house[2]);
+                markers[i] = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image1,
+                    url: house[4],
+                    shape: shape,
+                    title: house[0],
+                    zIndex: house[3]
+                });
+                var marker = markers[i];
+                google.maps.event.addListener(marker, 'click', function() {
+                  window.location.href = this.url;
+                });
+
+                google.maps.event.addListener(marker, 'mouseover', function(){
+                    
+                    this.setIcon(image2);
+                });
+
+                google.maps.event.addListener(marker, 'mouseout', function() {
+                    this.setIcon(image1);
+                });
+              }
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        
         </script>
 
     </head>
