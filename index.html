@@ -13,6 +13,7 @@
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+    
     </head>
     <body>
         <div class="page-wrapper">
@@ -508,7 +509,7 @@
                     <div class="container">
                         <a href="#0" class="lnk-map-hide"><span class="icon i-pin"></span>Hide Map</a>
                         <div class="map-wrapper">
-                            <img src="img/map.jpg" alt="">
+                            <div class="map-main"></div>
                         </div>
                     </div>
                 </div><!-- end of block-map -->
@@ -695,30 +696,10 @@
         </footer>
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.selectify.js"></script>
-        <script>
-            $(function(){
-                $("select").selectify();
-            });
-        </script>
-        <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-        <script>
-            $(function() {
-                $('.jcarousel')
-                    .jcarousel({wrap: "circular"})
-                    .jcarouselAutoscroll({interval: 5000});
-
-                $('.jcarousel-control-prev').jcarouselControl({target: "-=1"});
-
-                $('.jcarousel-control-next').jcarouselControl({target: "+=1"});
-
-                $('.jcarousel-control-prev-small').jcarouselControl({target: "-=1"});
-
-                $('.jcarousel-control-next-small').jcarouselControl({target: "+=1"});
-            });
-        </script>
-
+        <script src="js/jquery.jcarousel.js"></script>
+        <script src="js/plugins.js"></script>
+        
     </body>
 </html>

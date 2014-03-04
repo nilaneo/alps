@@ -20,3 +20,26 @@
         }
     }
 }());
+
+$(function(){
+    $("select").selectify();
+
+    $('.jcarousel')
+        .jcarousel({wrap: "circular"})
+        .jcarouselAutoscroll({interval: 5000});
+
+    $('.jcarousel-control-prev').jcarouselControl({target: "-=1"});
+
+    $('.jcarousel-control-next').jcarouselControl({target: "+=1"});
+
+    $('.jcarousel-control-prev-small').jcarouselControl({target: "-=1"});
+
+    $('.jcarousel-control-next-small').jcarouselControl({target: "+=1"});
+
+    $('.v-jcarousel')
+        .jcarousel({wrap: "circular", vertical: true});
+
+    $('.v-jcarousel-control-prev').jcarouselControl({target: "-=1"});
+
+    $('.v-jcarousel-control-next').jcarouselControl({target: "+=1"});
+});
