@@ -285,10 +285,18 @@ img {
     background-position: -14px 0;
 }
 
+.i-twitter-black:hover {
+    background-position: 0 -142px;
+}
+
 .i-facebook-black {
     width: 19px;
     height: 18px;
     background-position: -36px 0;
+}
+
+.i-facebook-black:hover {
+    background-position: -22px -142px;
 }
 
 .i-skype-black {
@@ -297,10 +305,18 @@ img {
     background-position: -59px 0;
 }
 
+.i-skype-black:hover {
+    background-position: -42px -142px;
+}
+
 .i-google-black {
     width: 19px;
     height: 18px;
     background-position: -79px 0;
+}
+
+.i-google-black:hover {
+    background-position: -62px -142px;
 }
 
 .i-area,
@@ -750,6 +766,10 @@ img {
     color: @green;
     text-decoration: underline;
     text-transform: uppercase;
+
+    &:hover {
+        color: #16e398;
+    }
 }
 
 .lnk-small {
@@ -758,7 +778,7 @@ img {
     text-decoration: underline;
 
     &:hover {
-        color: lighten(@green, 10%);
+        color: #16e398;
     }
 }
 
@@ -779,7 +799,7 @@ img {
 }
 
 .text-dark {
-    color: @gray;
+    color: @gray !important;
 }
 
 .text-green {
@@ -1357,9 +1377,10 @@ img {
 
 .list-share {
     .inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
     li {
         .inline-block;
-        margin-left: 15px;
         a {
             color: @black;
             font-size: 14px;
@@ -1367,7 +1388,7 @@ img {
         }
 
         .icon {
-            margin-right: 5px;
+            margin: 0 5px;
         }
     }
 }
@@ -1465,6 +1486,10 @@ img {
     text-transform: uppercase;
     text-decoration: underline;
     .triangle-left(5px, 10px, @green);
+
+    &:hover {
+        .text-dark;
+    }
 }
 
 .picture-wrapper {
@@ -1650,8 +1675,12 @@ img {
             text-transform: uppercase; 
             text-decoration: underline;
             line-height: 24px;
-       }
-   } 
+
+            &:hover {
+                color: #16e398;
+            }
+        }
+    } 
 }
 
 .block-info {
@@ -1914,7 +1943,7 @@ img {
         line-height: 24px;
         background-color: @gray;
         text-align: center;
-        .flat-shadow-right(@width:4px, @height:20px, @color:#d7d7d7);
+        .flat-shadow-right(@width:4px, @height:20px, @color:#d7d7d7);        
     }
 
     i {
@@ -1922,6 +1951,12 @@ img {
         width: 6px;
         height: 13px;
         background-image: url(../img/sprite-icons.png);
+    }
+
+    &:hover {
+        span {
+            background-color: #f4f4f4;
+        }
     }
 }
 
@@ -1934,6 +1969,12 @@ img {
     i {
         background-position: -60px -106px;
     }
+
+    &:hover {
+        i {
+            background-position: -30px -106px;
+        }
+    }
 }
 
 .btn-next {
@@ -1944,6 +1985,12 @@ img {
 
     i {
         background-position: -66px -106px;
+    }
+
+    &:hover {
+        i {
+            background-position: -38px -106px;
+        }
     }
 }
 
@@ -2221,9 +2268,10 @@ img {
     background-color: @white;
     list-style: none outside none;
     overflow: auto;
-    z-index: 1;
+    z-index: 100;
 
     li {
+        width: 100%;
         margin: 0;
         padding: 0 12px;
         overflow: hidden;
@@ -2231,9 +2279,9 @@ img {
 
         a {
             display: block;
-            height: 30px;
-            color: @black;
-            font-size: 12px;
+            height: 26px;
+            color: @gray;
+            font-size: 14px;
             font-weight: normal;
             font-family: 'Scada', sans-serif;
             line-height: 30px;
@@ -2243,10 +2291,10 @@ img {
     }
 
     li:hover {
-        background-color: @black;
+        background-color: @green;
         background-color: rgba(0, 0, 0, .01);
         a {
-            color: @green;
+            color: #979898;
         }
     }
 }

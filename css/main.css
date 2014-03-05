@@ -144,20 +144,32 @@ img {
   height: 18px;
   background-position: -14px 0;
 }
+.i-twitter-black:hover {
+  background-position: 0 -142px;
+}
 .i-facebook-black {
   width: 19px;
   height: 18px;
   background-position: -36px 0;
+}
+.i-facebook-black:hover {
+  background-position: -22px -142px;
 }
 .i-skype-black {
   width: 19px;
   height: 18px;
   background-position: -59px 0;
 }
+.i-skype-black:hover {
+  background-position: -42px -142px;
+}
 .i-google-black {
   width: 19px;
   height: 18px;
   background-position: -79px 0;
+}
+.i-google-black:hover {
+  background-position: -62px -142px;
 }
 .i-area,
 .i-bedrooms,
@@ -597,13 +609,16 @@ img {
   text-decoration: underline;
   text-transform: uppercase;
 }
+.lnk-primary:hover {
+  color: #16e398;
+}
 .lnk-small {
   color: #0ca26b;
   font-size: 13px;
   text-decoration: underline;
 }
 .lnk-small:hover {
-  color: #10d18a;
+  color: #16e398;
 }
 .list-links a {
   color: #0ca26b;
@@ -611,7 +626,7 @@ img {
   text-decoration: underline;
 }
 .list-links a:hover {
-  color: #10d18a;
+  color: #16e398;
 }
 .lnk-print {
   color: #383838;
@@ -622,7 +637,7 @@ img {
   color: #f4f4f4 !important;
 }
 .text-dark {
-  color: #383838;
+  color: #383838 !important;
 }
 .text-green {
   color: #0ca26b;
@@ -760,7 +775,7 @@ img {
   font-size: 14px;
 }
 .lnk-change-search-request:hover {
-  color: #10d18a;
+  color: #16e398;
 }
 .label-primary {
   display: block;
@@ -1254,13 +1269,14 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+  margin-left: 15px;
+  vertical-align: middle;
 }
 .list-share li {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-  margin-left: 15px;
 }
 .list-share li a {
   color: #000000;
@@ -1268,7 +1284,7 @@ img {
   font-family: "Scada", sans-serif;
 }
 .list-share li .icon {
-  margin-right: 5px;
+  margin: 0 5px;
 }
 /* Block-ap-contacts
 
@@ -1370,6 +1386,9 @@ img {
   border-style: solid;
   border-width: 5px 5px 5px 0;
   border-color: transparent #0ca26b transparent transparent;
+}
+.news-place:hover {
+  color: #383838 !important;
 }
 .picture-wrapper {
   -webkit-box-sizing: border-box;
@@ -1598,11 +1617,17 @@ img {
   height: 13px;
   background-image: url(../img/sprite-icons.png);
 }
+.list-links-big li:hover span {
+  background-color: #f4f4f4;
+}
 .list-links-big li span {
   margin-left: 10px;
 }
 .list-links-big li i {
   background-position: -66px -106px;
+}
+.list-links-big li:hover i {
+  background-position: -38px -106px;
 }
 .list-links-big li span {
   float: left;
@@ -1613,6 +1638,9 @@ img {
   text-transform: uppercase;
   text-decoration: underline;
   line-height: 24px;
+}
+.list-links-big li a:hover {
+  color: #16e398;
 }
 .block-info {
   position: relative;
@@ -1968,6 +1996,10 @@ img {
   height: 13px;
   background-image: url(../img/sprite-icons.png);
 }
+.btn-prev:hover span,
+.btn-next:hover span {
+  background-color: #f4f4f4;
+}
 .btn-prev {
   margin-right: 15px;
 }
@@ -1977,6 +2009,9 @@ img {
 .btn-prev i {
   background-position: -60px -106px;
 }
+.btn-prev:hover i {
+  background-position: -30px -106px;
+}
 .btn-next {
   margin-right: 20px;
 }
@@ -1985,6 +2020,9 @@ img {
 }
 .btn-next i {
   background-position: -66px -106px;
+}
+.btn-next:hover i {
+  background-position: -38px -106px;
 }
 .page-cur {
   display: inline-block;
@@ -2196,11 +2234,17 @@ img {
   height: 13px;
   background-image: url(../img/sprite-icons.png);
 }
+.slider-small .jcarousel-control-prev-small:hover span {
+  background-color: #f4f4f4;
+}
 .slider-small .jcarousel-control-prev-small span {
   margin-right: 10px;
 }
 .slider-small .jcarousel-control-prev-small i {
   background-position: -60px -106px;
+}
+.slider-small .jcarousel-control-prev-small:hover i {
+  background-position: -30px -106px;
 }
 .slider-small .jcarousel-control-next-small {
   right: -48px;
@@ -2241,11 +2285,17 @@ img {
   height: 13px;
   background-image: url(../img/sprite-icons.png);
 }
+.slider-small .jcarousel-control-next-small:hover span {
+  background-color: #f4f4f4;
+}
 .slider-small .jcarousel-control-next-small span {
   margin-left: 10px;
 }
 .slider-small .jcarousel-control-next-small i {
   background-position: -66px -106px;
+}
+.slider-small .jcarousel-control-next-small:hover i {
+  background-position: -38px -106px;
 }
 /* ==========================================================================
     Custom select box
@@ -2318,9 +2368,10 @@ img {
   background-color: #ffffff;
   list-style: none outside none;
   overflow: auto;
-  z-index: 1;
+  z-index: 100;
 }
 .sl-container .sl-options li {
+  width: 100%;
   margin: 0;
   padding: 0 12px;
   overflow: hidden;
@@ -2328,9 +2379,9 @@ img {
 }
 .sl-container .sl-options li a {
   display: block;
-  height: 30px;
-  color: #000000;
-  font-size: 12px;
+  height: 26px;
+  color: #383838;
+  font-size: 14px;
   font-weight: normal;
   font-family: 'Scada', sans-serif;
   line-height: 30px;
@@ -2338,11 +2389,11 @@ img {
   text-align: left;
 }
 .sl-container .sl-options li:hover {
-  background-color: #000000;
+  background-color: #0ca26b;
   background-color: rgba(0, 0, 0, 0.01);
 }
 .sl-container .sl-options li:hover a {
-  color: #0ca26b;
+  color: #979898;
 }
 .select-sort {
   width: 98px;
