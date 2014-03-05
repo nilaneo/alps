@@ -337,13 +337,6 @@ img {
     background-position: -74px -24px;
 }
 
-.icon-3 {
-    width: 19px;
-    height: 13px;
-    background-position: -59px -50px;
-    vertical-align: middle;
-}
-
 .i-pin {
     width: 22px;
     height: 18px;
@@ -436,8 +429,29 @@ img {
     width: 12px;
     height: 11px;
     margin-top: 2px;
-    background: url(../img/cross.png) no-repeat;
+    background-image: url(../img/sprite-icons.png);
+    background-position: -46px -106px;
     vertical-align: middle;
+}
+
+.i-arrow-down {
+    background-image: url(../img/sprite-icons.png);
+    background-position: -15px -106px;
+}
+
+.i-arrow-up {
+    background-image: url(../img/sprite-icons.png);
+    background-position: -15px -113px;
+}
+
+.i-arrow-left {
+    background-image: url(../img/sprite-icons.png);
+    background-position: -15px -106px;
+}
+
+.i-arrow-right {
+    background-image: url(../img/sprite-icons.png);
+    background-position: -38px -106px;
 }
 
 .icon-wrapper {
@@ -471,7 +485,7 @@ img {
     margin-right: 8px;
     margin-bottom: 3px;
     vertical-align: middle;
-    background: url(../img/arrow-right.png) no-repeat;
+    .i-arrow-right;
 }
 
 .arrow-down {
@@ -481,7 +495,7 @@ img {
     margin-right: 8px;
     margin-bottom: 5px;
     vertical-align: middle;
-    background: url(../img/arrow-down.png) no-repeat;
+    .i-arrow-down;
 }
 
 .block-angled {
@@ -565,9 +579,13 @@ img {
         height: 54px;
         padding: 25px 0 0 5px;
         color: @gray;
+        &:hover {
+            color: @green;
+        }
     }
 
-    .is-active {
+    .is-active,
+    .is-active:hover {
         background: url(../img/ribbon-down.png) no-repeat;
         color: @white;
     }
@@ -1268,7 +1286,8 @@ img {
        width: 4px;
        height: 10px;
        margin-right: 5px;
-       background: url(../img/ar-green-small.png) no-repeat;
+       background-image: url(../img/sprite-icons.png);
+       background-position: -9px -106px;
     }
 
     font-size: 14px;
@@ -1290,7 +1309,8 @@ img {
     li:before {
         width: 6px;
         height: 14px;
-        background: url(../img/ar-green-big.png) no-repeat;
+        background-image: url(../img/sprite-icons.png);
+        background-position: 0 -106px;
         vertical-align: middle;
     }
 }
@@ -1901,8 +1921,7 @@ img {
         .inline-block;
         width: 6px;
         height: 13px;
-        background-image: url(../img/sprite-arrows-white.png);
-        background-repeat: no-repeat;
+        background-image: url(../img/sprite-icons.png);
     }
 }
 
@@ -1913,7 +1932,7 @@ img {
     }
 
     i {
-        background-position: 0 0;
+        background-position: -60px -106px;
     }
 }
 
@@ -1924,7 +1943,7 @@ img {
     }
 
     i {
-        background-position: -6px 0;
+        background-position: -66px -106px;
     }
 }
 
@@ -1988,8 +2007,7 @@ img {
         .inline-block;
         width: 6px;
         height: 13px;
-        background-image: url(../img/sprite-arrows-white.png);
-        background-repeat: no-repeat;
+        background-image: url(../img/sprite-icons.png);
     }
 }
 
@@ -1998,7 +2016,7 @@ img {
     background: url(../img/ribbon-left.png) no-repeat;
     span {
         margin-left: 8px;
-        background-position: 0 0;
+        background-position: -60px -106px;
     }
 }
 
@@ -2007,7 +2025,7 @@ img {
     background: url(../img/ribbon-right.png) no-repeat;
     span {
         margin-left: -8px;
-        background-position: -6px 0;
+        background-position: -66px -106px;
     }
 }
 
@@ -2072,14 +2090,14 @@ img {
 .v-jcarousel-control-prev {
     left: 65px;
     span {
-        background-image: url(../img/arrow-up.png);
+       .i-arrow-up;
     }
 }
 
 .v-jcarousel-control-next {
     right: 65px;
     span {
-        background-image: url(../img/arrow-down.png);
+        .i-arrow-down;
     }
 }
 
@@ -2152,7 +2170,7 @@ img {
     width: 13px;
     height: 6px !important;
     margin: 12px 6px 0;
-    background: url(../img/arrow-down.png) no-repeat;
+    .i-arrow-down;
     font-size: 0;
     line-height: 0;
 }
@@ -2235,7 +2253,8 @@ img {
 
 .select-sort {
     width: 98px;
-    margin: 0 15px;
+    margin: 0;
+    margin-left: 15px;
     vertical-align: middle;
 
     .sl-placeholder-container {

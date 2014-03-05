@@ -187,12 +187,6 @@ img {
   height: 18px;
   background-position: -74px -24px;
 }
-.icon-3 {
-  width: 19px;
-  height: 13px;
-  background-position: -59px -50px;
-  vertical-align: middle;
-}
 .i-pin {
   width: 22px;
   height: 18px;
@@ -275,8 +269,25 @@ img {
   width: 12px;
   height: 11px;
   margin-top: 2px;
-  background: url(../img/cross.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -46px -106px;
   vertical-align: middle;
+}
+.i-arrow-down {
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -106px;
+}
+.i-arrow-up {
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -113px;
+}
+.i-arrow-left {
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -106px;
+}
+.i-arrow-right {
+  background-image: url(../img/sprite-icons.png);
+  background-position: -38px -106px;
 }
 .icon-wrapper {
   display: inline-block;
@@ -324,7 +335,8 @@ img {
   margin-right: 8px;
   margin-bottom: 3px;
   vertical-align: middle;
-  background: url(../img/arrow-right.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -38px -106px;
 }
 .arrow-down {
   display: inline-block;
@@ -336,7 +348,8 @@ img {
   margin-right: 8px;
   margin-bottom: 5px;
   vertical-align: middle;
-  background: url(../img/arrow-down.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -106px;
 }
 .block-angled {
   position: relative;
@@ -430,7 +443,11 @@ img {
   padding: 25px 0 0 5px;
   color: #383838;
 }
-.languages .is-active {
+.languages a:hover {
+  color: #0ca26b;
+}
+.languages .is-active,
+.languages .is-active:hover {
   background: url(../img/ribbon-down.png) no-repeat;
   color: #ffffff;
 }
@@ -1144,7 +1161,8 @@ img {
   width: 4px;
   height: 10px;
   margin-right: 5px;
-  background: url(../img/ar-green-small.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -9px -106px;
 }
 .list-narrow li {
   display: inline-block;
@@ -1172,12 +1190,14 @@ img {
   width: 4px;
   height: 10px;
   margin-right: 5px;
-  background: url(../img/ar-green-small.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -9px -106px;
 }
 .list-big li:before {
   width: 6px;
   height: 14px;
-  background: url(../img/ar-green-big.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: 0 -106px;
   vertical-align: middle;
 }
 .property-map-wrapper {
@@ -1432,7 +1452,8 @@ img {
   margin-right: 8px;
   margin-bottom: 3px;
   vertical-align: middle;
-  background: url(../img/arrow-right.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -38px -106px;
 }
 .list-questions .answer {
   display: none;
@@ -1457,7 +1478,8 @@ img {
   margin-right: 8px;
   margin-bottom: 5px;
   vertical-align: middle;
-  background: url(../img/arrow-down.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -106px;
   margin-right: 1px;
 }
 /* ==========================================================================
@@ -1574,14 +1596,13 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows-white.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/sprite-icons.png);
 }
 .list-links-big li span {
   margin-left: 10px;
 }
 .list-links-big li i {
-  background-position: -6px 0;
+  background-position: -66px -106px;
 }
 .list-links-big li span {
   float: left;
@@ -1945,8 +1966,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows-white.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/sprite-icons.png);
 }
 .btn-prev {
   margin-right: 15px;
@@ -1955,7 +1975,7 @@ img {
   margin-right: 10px;
 }
 .btn-prev i {
-  background-position: 0 0;
+  background-position: -60px -106px;
 }
 .btn-next {
   margin-right: 20px;
@@ -1964,7 +1984,7 @@ img {
   margin-left: 10px;
 }
 .btn-next i {
-  background-position: -6px 0;
+  background-position: -66px -106px;
 }
 .page-cur {
   display: inline-block;
@@ -2026,8 +2046,7 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows-white.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/sprite-icons.png);
 }
 .jcarousel-control-prev {
   left: -60px;
@@ -2035,7 +2054,7 @@ img {
 }
 .jcarousel-control-prev span {
   margin-left: 8px;
-  background-position: 0 0;
+  background-position: -60px -106px;
 }
 .jcarousel-control-next {
   right: -60px;
@@ -2043,7 +2062,7 @@ img {
 }
 .jcarousel-control-next span {
   margin-left: -8px;
-  background-position: -6px 0;
+  background-position: -66px -106px;
 }
 /* Vertical Carousel
 ========================================================================== */
@@ -2103,13 +2122,15 @@ img {
   left: 65px;
 }
 .v-jcarousel-control-prev span {
-  background-image: url(../img/arrow-up.png);
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -113px;
 }
 .v-jcarousel-control-next {
   right: 65px;
 }
 .v-jcarousel-control-next span {
-  background-image: url(../img/arrow-down.png);
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -106px;
 }
 .slide-ap img {
   display: block;
@@ -2173,14 +2194,13 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows-white.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/sprite-icons.png);
 }
 .slider-small .jcarousel-control-prev-small span {
   margin-right: 10px;
 }
 .slider-small .jcarousel-control-prev-small i {
-  background-position: 0 0;
+  background-position: -60px -106px;
 }
 .slider-small .jcarousel-control-next-small {
   right: -48px;
@@ -2219,14 +2239,13 @@ img {
   /* IE < 8 */
   width: 6px;
   height: 13px;
-  background-image: url(../img/sprite-arrows-white.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/sprite-icons.png);
 }
 .slider-small .jcarousel-control-next-small span {
   margin-left: 10px;
 }
 .slider-small .jcarousel-control-next-small i {
-  background-position: -6px 0;
+  background-position: -66px -106px;
 }
 /* ==========================================================================
     Custom select box
@@ -2252,7 +2271,8 @@ img {
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
-  background: url(../img/arrow-down.png) no-repeat;
+  background-image: url(../img/sprite-icons.png);
+  background-position: -15px -106px;
   font-size: 0;
   line-height: 0;
 }
@@ -2326,7 +2346,8 @@ img {
 }
 .select-sort {
   width: 98px;
-  margin: 0 15px;
+  margin: 0;
+  margin-left: 15px;
   vertical-align: middle;
 }
 .select-sort .sl-placeholder-container {
