@@ -778,6 +778,10 @@ img {
 /* Block-search
 ========================================================================== */
 
+.block-search {
+    border-top: 2px solid @white;
+}
+
 .tabs {
     background-color: @white-darker;
 
@@ -787,12 +791,17 @@ img {
 
     li {
         float: left;
-        margin-right: 10px;
         a {
             .title-square;
+            &:hover {
+                .title-square-green;
+                background-color: @lemon;
+                color: @gray;
+            }
         }
 
-        .is-active {
+        .is-active,
+        .is-active:hover {
             .title-square-green;
         }
     }

@@ -1,5 +1,13 @@
 $(function() {
 
+	//Tabs 
+
+	$(".tabs a").on("click", function (e) {
+		e.preventDefault();
+		$(this).closest("ul").find("a").removeClass("is-active");
+		$(this).addClass("is-active");		
+	});
+
 	// FAQ
 
 	$(".j-question").on("click", function (e) {
