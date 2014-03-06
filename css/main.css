@@ -1007,6 +1007,18 @@ img {
   font-size: 14px;
   text-decoration: underline;
 }
+.lnk-map-hide .hide-map-text {
+  display: inline;
+}
+.lnk-map-hide .show-map-text {
+  display: none;
+}
+.lnk-map-hide.is-clicked .show-map-text {
+  display: inline;
+}
+.lnk-map-hide.is-clicked .hide-map-text {
+  display: none;
+}
 .map-wrapper {
   width: 100%;
   height: 320px;

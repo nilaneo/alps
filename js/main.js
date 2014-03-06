@@ -48,7 +48,12 @@ $(function() {
 		$(this).closest(".custom-select").find(".custom-select-locations").show();
 	});
 
-	
+	// Hide/show map
+
+	$(".lnk-map-hide").on("click", function (e) {
+		e.preventDefault();
+		$(this).toggleClass("is-clicked").next(".map-wrapper").slideToggle();
+	});
 
 	// FAQ
 

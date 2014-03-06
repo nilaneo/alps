@@ -1141,6 +1141,24 @@ img {
     color: @black;
     font-size: 14px;
     text-decoration: underline;
+
+    .hide-map-text {
+        display: inline;
+    }
+
+    .show-map-text {
+        display: none;
+    }
+}
+
+.lnk-map-hide.is-clicked {
+    .show-map-text {
+        display: inline;
+    }
+
+    .hide-map-text {
+        display: none;
+    }
 }
 
 .map-wrapper {
