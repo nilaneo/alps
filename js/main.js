@@ -27,7 +27,7 @@ $(function() {
 		$(".checkbox").on("click", function (e) {
 			e.preventDefault();
 			var $this = $(this);
-			$this.toggleClass("is-checked")
+			$this.toggleClass("is-checked");
 			updateInputForCustomSelect($this.closest(".custom-select"));
 		});
 
@@ -36,6 +36,19 @@ $(function() {
 		});
 	})();
 
+	// Custom select for locations
+
+	$(".btn-update-search").on("click", function (e) {
+		e.preventDefault();
+		$(".custom-select-locations").hide();
+	});
+
+	$(".custom-select-inner-locations").on("click", function (e) {
+		e.preventDefault();
+		$(this).closest(".custom-select").find(".custom-select-locations").show();
+	});
+
+	
 
 	// FAQ
 
