@@ -1,12 +1,41 @@
 $(function() {
 
-	//Tabs 
+	// Tabs
 
 	$(".tabs a").on("click", function (e) {
 		e.preventDefault();
 		$(this).closest("ul").find("a").removeClass("is-active");
-		$(this).addClass("is-active");		
+		$(this).addClass("is-active");
 	});
+
+	// Custom selects with checkboxes
+
+	$(".custom-select-inner").on("click", function (e) {
+		e.preventDefault();
+		$(this).closest(".custom-select").find(".custom-select-list-checkboxes").toggleClass("is-open");
+	});
+
+	(function() {
+		function updateInputForCustomSelect ($customSelect) {
+			var inputText = $customSelect.find(".is-checked").map(function(i, el){
+				return $(el).text();
+			}).toArray().join(", ")
+
+			$customSelect.find(".custom-select-chosen-items").text(inputText);
+		}
+
+		$(".checkbox").on("click", function (e) {
+			e.preventDefault();
+			var $this = $(this);
+			$this.toggleClass("is-checked")
+			updateInputForCustomSelect($this.closest(".custom-select"));
+		});
+
+		$('.custom-select').each(function(i, el) {
+			updateInputForCustomSelect($(el));
+		});
+	})();
+
 
 	// FAQ
 
@@ -17,7 +46,7 @@ $(function() {
 	});
 
 	// Show/hide Popup
-	
+
 	$(".j-btn-ask").on("click", function (e) {
 		e.preventDefault();
 		$(".popup").show();
