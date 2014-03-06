@@ -164,12 +164,12 @@ a:focus {
     outline: none;
 }
 
-::selection { 
+::selection {
     background-color: @green;
     color: @white;
-} 
+}
 
-::-moz-selection { 
+::-moz-selection {
     background-color: @green;
     color: @white;
 }
@@ -1496,16 +1496,16 @@ img {
     .box-sizing;
     padding: 5px;
     border: 1px solid #a5a5a5;
-    margin-top: 15px;  
+    margin-top: 15px;
     img {
         display: block;
-    } 
+    }
 }
 
 .description-full {
    padding-bottom: 25px;
    border-bottom: 1px solid #a5a5a5;
-   margin-bottom: 15px; 
+   margin-bottom: 15px;
 }
 
 /* ==========================================================================
@@ -1672,7 +1672,7 @@ img {
 
        a {
             color: @green;
-            text-transform: uppercase; 
+            text-transform: uppercase;
             text-decoration: underline;
             line-height: 24px;
 
@@ -1680,7 +1680,7 @@ img {
                 color: #16e398;
             }
         }
-    } 
+    }
 }
 
 .block-info {
@@ -1941,7 +1941,7 @@ img {
         line-height: 24px;
         background-color: @gray;
         text-align: center;
-        .flat-shadow-right(@width:4px, @height:20px, @color:#d7d7d7);        
+        .flat-shadow-right(@width:4px, @height:20px, @color:#d7d7d7);
     }
 
     i {
@@ -2198,7 +2198,7 @@ img {
 ========================================================================== */
 
 .select-box {
-    height: 27px;
+    height: 17px;
     .inline-block;
 }
 
@@ -2224,7 +2224,6 @@ img {
     float: left;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 
     .sl-placeholder-container {
         position: relative;
@@ -2257,32 +2256,36 @@ img {
 }
 
 .sl-container .sl-options {
-    top: 20px !important;
+    top: 27px !important;
+    left: 0 !important;
     width: 100%;
     padding: 0;
-    max-height: 200px;
+    max-height: 112px;
     margin: 0;
-    border: 1px solid @black;
-    background-color: @white;
+    background-color: #979898;
     list-style: none outside none;
     overflow: auto;
     z-index: 100;
+    .box-shadow(2px 2px 3px rgba(0, 0, 0, .2));
 
     li {
         width: 100%;
+        height: 27px;
         margin: 0;
-        padding: 0 12px;
+        padding: 0 10px;
         overflow: hidden;
         line-height: 30px;
+        .box-sizing;
 
         a {
             display: block;
-            height: 26px;
+            width: 100%;
+            height: 27px;
             color: @gray;
             font-size: 14px;
             font-weight: normal;
             font-family: 'Scada', sans-serif;
-            line-height: 30px;
+            line-height: 27px;
             text-decoration: none;
             text-align: left;
         }
@@ -2290,10 +2293,6 @@ img {
 
     li:hover {
         background-color: @green;
-        background-color: rgba(0, 0, 0, .01);
-        a {
-            color: #979898;
-        }
     }
 }
 
@@ -2301,7 +2300,6 @@ img {
     width: 98px;
     margin: 0;
     margin-left: 15px;
-    vertical-align: middle;
 
     .sl-placeholder-container {
         background: #cfcfcf;
@@ -2315,3 +2313,86 @@ img {
         font-size: 12px;
     }
 }
+
+.custom-select {
+    .inline-block;
+    position: relative;
+    height: 27px;
+    background-color: #989897;
+    .box-shadow(inset 1px 1px 2px rgba(0, 0, 0, .5));
+}
+
+.custom-select-inner {
+    width: 100%;
+    height: 100%;
+    padding: 3px 25px 3px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .box-sizing;
+}
+
+.custom-select-chosen-items {
+    .sl-placeholder;
+    .inline-block;
+    width: 100px;
+    height: 21px;
+    line-height: 21px;
+}
+
+.custom-select-list-checkboxes {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 27px !important;
+    left: 0 !important;
+    z-index: 1000;
+}
+
+.custom-select-list-checkboxes.is-open {
+    display: block;
+}
+
+.list-checkboxes {
+    .sl-container.sl-options;
+    .box-sizing;
+    .list-inline;
+    top: 0 !important;
+    left: 0 !important;
+    padding-top: 5px;
+    background-color: #989897;
+
+    li,
+    li:hover {
+        width: 50%;
+        padding: 0 10px;
+        line-height: 16px;
+        background-color: #989897;
+        .box-sizing;
+
+        a {
+            .inline-block;
+            width: auto;
+            height: 17px;
+            line-height: 16px;
+            padding-left: 24px;
+            background-image: url(../img/checkboxes.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+
+        .is-checked {
+            height: 17px;
+            background-position: 0 -17px;
+        }
+    }
+}
+
+.btn-custom-select{
+    .sl-button;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: inherit;
+}
+
