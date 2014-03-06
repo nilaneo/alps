@@ -430,26 +430,42 @@ img {
 .i-picture {
     width: 21px;
     height: 18px;
-    background-position: -39px -68px;
+    background-position: -38px -68px;
+
+    &:hover {
+        background-position: 2px -122px;
+    }
 }
 
 .i-gallery {
     width: 23px;
     height: 19px;
     background-position: -59px -67px;
+
+    &:hover {
+        background-position: -40px -121px;
+    }
 }
 
 .i-video {
     width: 21px;
     height: 18px;
     background-position: 1px -87px;
+
+    &:hover {
+        background-position: -19px -122px;
+    }
 }
 
 .i-search {
     width: 24px;
-    height: 22px;
+    height: 21px;
     margin: 20px 15px 0 0;
     background-position: -19px -85px;
+}
+
+.i-search:hover {
+    background-position: -64px -85px;
 }
 
 .i-cross {
@@ -780,7 +796,7 @@ img {
     text-transform: uppercase;
 
     &:hover {
-        color: #16e398;
+        color: #16e398 !important;
     }
 }
 
@@ -982,6 +998,14 @@ img {
         border-style: solid;
         border-width: 19px 0 19px 12px;
         border-color: transparent transparent transparent @green;
+    }
+
+    &:hover {
+        background-color: #04c37d;
+
+        &:after {
+            border-color: transparent transparent transparent #04c37d;
+        }
     }
 }
 
@@ -1718,6 +1742,11 @@ img {
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+
+    &:hover {
+        background-color: @gray;
+        .text-light;
+    }
 }
 
 .title-part {
@@ -1824,6 +1853,10 @@ img {
     height: 21px;
     background-color: #f4f4f4;
     text-align: center;
+
+    &:hover {
+        background-color: #989898;
+    }
 }
 
 /* ==========================================================================
@@ -1928,6 +1961,13 @@ img {
         margin: 0;
         line-height: 16px;
         .scada;
+        a {
+            color: @gray;
+        }
+
+        .lnk-primary {
+            color: @green;
+        }
     }
 }
 
@@ -2075,6 +2115,10 @@ img {
         margin-left: 8px;
         background-position: -60px -106px;
     }
+
+    &:hover {
+        background: url(../img/ribbon-left-hover.png) no-repeat;
+    }
 }
 
 .jcarousel-control-next {
@@ -2083,6 +2127,10 @@ img {
     span {
         margin-left: -8px;
         background-position: -66px -106px;
+    }
+
+    &:hover {
+        background: url(../img/ribbon-right-hover.png) no-repeat;
     }
 }
 
@@ -2141,6 +2189,10 @@ img {
         height: 6px;
         margin-bottom: 4px;
         background-repeat: no-repeat;
+    }
+
+    &:hover {
+        background-color: #d2d2d2;
     }
 }
 

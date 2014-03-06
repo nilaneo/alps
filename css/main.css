@@ -255,23 +255,35 @@ img {
 .i-picture {
   width: 21px;
   height: 18px;
-  background-position: -39px -68px;
+  background-position: -38px -68px;
+}
+.i-picture:hover {
+  background-position: 2px -122px;
 }
 .i-gallery {
   width: 23px;
   height: 19px;
   background-position: -59px -67px;
 }
+.i-gallery:hover {
+  background-position: -40px -121px;
+}
 .i-video {
   width: 21px;
   height: 18px;
   background-position: 1px -87px;
 }
+.i-video:hover {
+  background-position: -19px -122px;
+}
 .i-search {
   width: 24px;
-  height: 22px;
+  height: 21px;
   margin: 20px 15px 0 0;
   background-position: -19px -85px;
+}
+.i-search:hover {
+  background-position: -64px -85px;
 }
 .i-cross {
   display: inline-block;
@@ -610,7 +622,7 @@ img {
   text-transform: uppercase;
 }
 .lnk-primary:hover {
-  color: #16e398;
+  color: #16e398 !important;
 }
 .lnk-small {
   color: #0ca26b;
@@ -839,6 +851,12 @@ img {
   border-style: solid;
   border-width: 19px 0 19px 12px;
   border-color: transparent transparent transparent #0ca26b;
+}
+.btn-big:hover {
+  background-color: #04c37d;
+}
+.btn-big:hover:after {
+  border-color: transparent transparent transparent #04c37d;
 }
 .btn-send {
   margin-top: 20px;
@@ -1666,6 +1684,10 @@ img {
   line-height: 20px;
   text-align: center;
 }
+.lnk-more:hover {
+  background-color: #383838;
+  color: #f4f4f4 !important;
+}
 .title-part {
   display: inline-block;
   *display: block;
@@ -1815,6 +1837,9 @@ img {
   background-color: #f4f4f4;
   text-align: center;
 }
+.btn-close:hover {
+  background-color: #989898;
+}
 /* ==========================================================================
     Form
 ========================================================================== */
@@ -1949,6 +1974,12 @@ img {
   margin: 0;
   line-height: 16px;
   font-family: "Scada", sans-serif;
+}
+.list-featured-ap .description a {
+  color: #383838;
+}
+.list-featured-ap .description .lnk-primary {
+  color: #0ca26b;
 }
 /* ==========================================================================
    Pagination
@@ -2094,6 +2125,9 @@ img {
   margin-left: 8px;
   background-position: -60px -106px;
 }
+.jcarousel-control-prev:hover {
+  background: url(../img/ribbon-left-hover.png) no-repeat;
+}
 .jcarousel-control-next {
   right: -60px;
   background: url(../img/ribbon-right.png) no-repeat;
@@ -2101,6 +2135,9 @@ img {
 .jcarousel-control-next span {
   margin-left: -8px;
   background-position: -66px -106px;
+}
+.jcarousel-control-next:hover {
+  background: url(../img/ribbon-right-hover.png) no-repeat;
 }
 /* Vertical Carousel
 ========================================================================== */
@@ -2155,6 +2192,10 @@ img {
   height: 6px;
   margin-bottom: 4px;
   background-repeat: no-repeat;
+}
+.v-jcarousel-control-prev:hover,
+.v-jcarousel-control-next:hover {
+  background-color: #d2d2d2;
 }
 .v-jcarousel-control-prev {
   left: 65px;
