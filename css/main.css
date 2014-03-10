@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic);
+
 @import url(http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic);
 /* ==========================================================================
     FONTS
@@ -11,6 +12,7 @@
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 /* ==========================================================================
     GENERAL STYLES
@@ -67,6 +69,7 @@ img {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
+
 }
 .clearfix:after {
   clear: both;
@@ -76,6 +79,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .center {
   margin: 0 auto;
@@ -129,6 +133,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
   background-image: url(../img/sprite-icons.png);
   background-repeat: no-repeat;
@@ -160,7 +165,7 @@ img {
   height: 18px;
   background-position: -59px 0;
 }
-.i-skype-black:hover {
+a.i-skype-black:hover {
   background-position: -42px -142px;
 }
 .i-google-black {
@@ -221,7 +226,7 @@ img {
 .i-envelope-white {
   width: 21px;
   height: 18px;
-  background-position: -11px -39px;
+  background-position: -11px -41px;
 }
 .i-envelope-black {
   width: 21px;
@@ -290,6 +295,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 12px;
   height: 11px;
   margin-top: 2px;
@@ -318,15 +324,20 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 30px;
+  line-height: 30px;
   margin-right: 10px;
   text-align: center;
   background-color: #e0e0e0;
   vertical-align: middle;
 }
 .icon-wrapper .icon {
-  vertical-align: sub;
+  vertical-align: middle;
+}
+.icon-wrapper .i-phone-black {
+  margin: 0;
 }
 .icon-white {
   position: relative;
@@ -354,6 +365,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -367,6 +379,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -397,6 +410,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -443,6 +457,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .icons-social {
   margin-left: 25px;
@@ -455,6 +470,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin: -25px 0 0 15px;
 }
 .languages a {
@@ -462,6 +478,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 25px;
   height: 54px;
   padding: 25px 0 0 5px;
@@ -494,6 +511,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 180px;
   height: 64px;
   margin-top: 10px;
@@ -516,6 +534,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 41px;
   line-height: 40px;
   color: #383838;
@@ -615,6 +634,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin-top: 5px;
   font-size: 14px;
   color: #0ca26b;
@@ -679,6 +699,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -752,6 +773,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -766,6 +788,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .list-filters-chosen li {
   color: #f4f4f4 !important;
@@ -805,6 +828,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 17px;
   height: 7px;
   margin-bottom: 3px;
@@ -974,7 +998,7 @@ img {
 }
 .short-description-wide li {
   float: left;
-  padding: 0 8px;
+  padding: 0 7px;
   border-left: 1px solid #afafaf;
 }
 .short-description-wide .icon {
@@ -1071,6 +1095,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 5px 10px;
   margin-right: 5px;
   background-color: #e0e0e0;
@@ -1136,6 +1161,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -1178,6 +1204,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 47%;
   vertical-align: top;
 }
@@ -1202,6 +1229,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   content: "";
   width: 4px;
   height: 10px;
@@ -1214,6 +1242,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 145px;
   margin-right: 8px;
 }
@@ -1231,6 +1260,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   content: "";
   width: 4px;
   height: 10px;
@@ -1274,6 +1304,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   position: relative;
   padding: 5px 10px;
   background-color: #383838;
@@ -1299,6 +1330,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   margin-left: 15px;
   vertical-align: middle;
 }
@@ -1307,6 +1339,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .list-share li a {
   color: #000000;
@@ -1331,6 +1364,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   vertical-align: top;
 }
 .ap-owner {
@@ -1345,6 +1379,9 @@ img {
 }
 .owner-contacts {
   font-size: 16px;
+}
+.owner-contacts span {
+  vertical-align: middle;
 }
 /* ==========================================================================
    NEWS
@@ -1369,12 +1406,14 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .new-info ul li:before {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 0;
   height: 18px;
   border-left: 1px solid #afafaf;
@@ -1394,6 +1433,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 24px;
   padding: 0 8px;
   margin-left: 5px;
@@ -1453,7 +1493,8 @@ img {
   text-align: center;
 }
 .btn-wide .i-envelope-white {
-  margin: 0 5px 7px 0;
+  margin: 0 4px 7px 0;
+  vertical-align: text-top;
 }
 .ask-wrap {
   position: relative;
@@ -1496,6 +1537,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -1522,6 +1564,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -1620,6 +1663,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1643,6 +1687,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -1662,6 +1707,11 @@ img {
 .list-links-big li span {
   float: left;
   margin: 0 10px 10px 0;
+  height: 23px;
+  line-height: 25px;
+}
+.list-links-big li i {
+  vertical-align: text-top;
 }
 .list-links-big li a {
   color: #0ca26b;
@@ -1705,6 +1755,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   position: relative;
   padding: 5px 10px;
   background-color: #383838;
@@ -1801,7 +1852,7 @@ img {
   left: 0;
   width: 440px;
   height: 494px;
-  padding: 15px 60px;
+  padding: 9px 47px 0;
   background-color: #3b3b3a;
   z-index: 10;
 }
@@ -1825,9 +1876,10 @@ img {
   font-weight: normal;
   margin: 0;
   margin-bottom: 20px;
+  vertical-align: middle;
 }
 .popup h3 .icon {
-  vertical-align: baseline;
+  vertical-align: bottom;
   margin-right: 5px;
 }
 .popup .btn-big {
@@ -1841,8 +1893,8 @@ img {
 }
 .btn-close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   display: block;
   width: 30px;
   height: 21px;
@@ -1988,10 +2040,10 @@ img {
   font-family: "Scada", sans-serif;
 }
 .list-featured-ap .description a {
-  color: #383838;
+  color: #383838 !important;
 }
 .list-featured-ap .description .lnk-primary {
-  color: #0ca26b;
+  color: #0ca26b !important;
 }
 /* ==========================================================================
    Pagination
@@ -2010,6 +2062,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -2035,6 +2088,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2072,6 +2126,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   height: 22px;
   line-height: 22px;
   padding: 0 10px;
@@ -2125,9 +2180,11 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
+  vertical-align: text-top;
 }
 .jcarousel-control-prev {
   left: -60px;
@@ -2200,6 +2257,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px;
   margin-bottom: 4px;
@@ -2248,6 +2306,10 @@ img {
   line-height: 27px;
   top: 32%;
 }
+.slider-small .jcarousel-control-prev-small i,
+.slider-small .jcarousel-control-next-small i {
+  vertical-align: text-top;
+}
 .slider-small .jcarousel-control-prev-small {
   left: -38px;
   color: #000000;
@@ -2260,6 +2322,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -2283,6 +2346,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2311,6 +2375,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -2334,6 +2399,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2359,6 +2425,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .select-search-filter {
   width: 150px;
@@ -2371,6 +2438,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
@@ -2473,6 +2541,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   position: relative;
   height: 27px;
   background-color: #989897;
@@ -2509,6 +2578,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 100px;
   height: 21px;
   line-height: 21px;
@@ -2576,6 +2646,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .list-checkboxes li,
 .list-checkboxes li:hover {
@@ -2594,6 +2665,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: auto;
   height: 17px;
   line-height: 16px;
@@ -2612,6 +2684,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
@@ -2631,7 +2704,7 @@ img {
   position: absolute;
   top: 0 !important;
   left: 0 !important;
-  z-index: 1000;
+  z-index: 10000;
   background-color: #989897;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2658,6 +2731,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
 }
 .list-areas li {
   position: relative;
@@ -2669,6 +2743,7 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
+
   padding: 5px;
   margin-left: 5px;
   font-size: 14px;

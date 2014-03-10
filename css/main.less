@@ -317,7 +317,7 @@ img {
     background-position: -59px 0;
 }
 
-.i-skype-black:hover {
+a.i-skype-black:hover {
     background-position: -42px -142px;
 }
 
@@ -390,7 +390,7 @@ img {
 .i-envelope-white {
     width: 21px;
     height: 18px;
-    background-position: -11px -39px;
+    background-position: -11px -41px;
 }
 
 .i-envelope-black {
@@ -502,12 +502,17 @@ img {
     .inline-block;
     width: 30px;
     height: 30px;
+    line-height: 30px;
     margin-right: 10px;
     text-align: center;
     background-color: #e0e0e0;
     vertical-align: middle;
     .icon {
-        vertical-align: sub;
+        vertical-align: middle;
+    }
+
+    .i-phone-black {
+        margin: 0;
     }
 }
 
@@ -1102,7 +1107,7 @@ img {
 .short-description-wide {
     li {
         float: left;
-        padding: 0 8px;
+        padding: 0 7px;
         border-left: 1px solid #afafaf;
     }
 
@@ -1479,6 +1484,10 @@ img {
 
 .owner-contacts {
     font-size: 16px;
+
+    span {
+        vertical-align: middle;
+    }
 }
 
 /* ==========================================================================
@@ -1580,7 +1589,8 @@ img {
     text-align: center;
 
     .i-envelope-white {
-        margin: 0 5px 7px 0;
+        margin: 0 4px 7px 0;
+        vertical-align: text-top;
     }
 }
 
@@ -1722,6 +1732,12 @@ img {
         span {
             float: left;
             margin: 0 10px 10px 0;
+            height: 23px;
+            line-height: 25px;
+        }
+
+        i {
+            vertical-align: text-top;
         }
 
        a {
@@ -1830,7 +1846,7 @@ img {
     left: 0;
     width: 440px;
     height: 494px;
-    padding: 15px 60px;
+    padding: 9px 47px 0;
     .block-dark;
     .flat-shadow-right(@width:16px, @height:494px, @color:#d2d2d2);
     z-index: 10;
@@ -1843,9 +1859,10 @@ img {
         font-weight: normal;
         margin: 0;
         margin-bottom: 20px;
+        vertical-align: middle;
 
         .icon {
-            vertical-align: baseline;
+            vertical-align: bottom;
             margin-right: 5px;
         }
     }
@@ -1864,8 +1881,8 @@ img {
 
 .btn-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     display: block;
     width: 30px;
     height: 21px;
@@ -1980,11 +1997,11 @@ img {
         line-height: 16px;
         .scada;
         a {
-            color: @gray;
+            color: @gray !important;
         }
 
         .lnk-primary {
-            color: @green;
+            color: @green !important;
         }
     }
 }
@@ -2123,6 +2140,7 @@ img {
         width: 6px;
         height: 13px;
         background-image: url(../img/sprite-icons.png);
+        vertical-align: text-top;
     }
 }
 
@@ -2260,6 +2278,10 @@ img {
         width: 30px;
         line-height: 27px;
         top: 32%;
+
+        i {
+            vertical-align: text-top;
+        }
     }
 
     .jcarousel-control-prev-small {
@@ -2488,7 +2510,7 @@ img {
     position: absolute;
     top: 0 !important;
     left: 0 !important;
-    z-index: 1000;
+    z-index: 10000;
     background-color: #989897;
     .box-sizing;
 
@@ -2524,12 +2546,12 @@ img {
         padding: 5px;
         margin-left: 5px;
         font-size: 14px;
-        color: @gray;        
+        color: @gray;
     }
 
     a:hover {
         background-color: @lemon;
-        .triangle-down(16px, 10px, @lemon); 
+        .triangle-down(16px, 10px, @lemon);
     }
 
     li.is-open {
@@ -2550,7 +2572,7 @@ img {
             height: 6px;
             background: url(../img/angle-down.png) no-repeat;
         }
-    } 
+    }
 }
 
 .areas {
