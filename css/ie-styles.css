@@ -6,3 +6,7 @@
 .textarea-primary {
 	border: 1px solid #cbcbcb;
 }
+
+.input-dark {
+	border: none;
+}
