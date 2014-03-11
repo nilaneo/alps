@@ -1,3 +1,8 @@
 .contacts-top {
     padding-top: 19px;
 }
+
+.input-primary,
+.textarea-primary {
+	border: 1px solid #cbcbcb;
+}

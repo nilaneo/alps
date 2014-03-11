@@ -570,6 +570,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   position: relative;
   width: 932px;
   height: 370px;
+  z-index: 1;
 }
 .slide-1 {
   background: url(../img/katopafos-1.jpg) no-repeat;
@@ -591,6 +592,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   background-color: rgba(56, 56, 56, 0.85);
   color: #f4f4f4;
   font-size: 14px;
+  z-index: 1000;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2005,11 +2007,13 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   margin: 0;
   line-height: 16px;
   font-family: "Scada", sans-serif;
+  color: #383838 !important;
 }
 .list-featured-ap .description a {
   color: #383838 !important;
 }
 .list-featured-ap .description .lnk-primary {
+  display: inline-block;
   color: #0ca26b !important;
 }
 /* ==========================================================================

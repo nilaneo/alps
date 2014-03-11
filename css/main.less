@@ -744,6 +744,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top  {
     position: relative;
     width: 932px;
     height: 370px;
+    z-index: 1;
 }
 
 .slide-1 {
@@ -769,6 +770,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top  {
     background-color: rgba(56, 56, 56, .85);
     color: @white-darker;
     font-size: 14px;
+    z-index: 1000;
 
     hr {
         margin: 15px 0;
@@ -2001,11 +2003,13 @@ html[data-useragent*='MSIE 10.0'] .contacts-top  {
         margin: 0;
         line-height: 16px;
         .scada;
+        color: @gray !important;
         a {
             color: @gray !important;
         }
 
         .lnk-primary {
+            display: inline-block;
             color: @green !important;
         }
     }
