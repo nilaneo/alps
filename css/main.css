@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic);
-
 @import url(http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic);
 /* ==========================================================================
     FONTS
@@ -12,7 +11,6 @@
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 /* ==========================================================================
     GENERAL STYLES
@@ -69,7 +67,6 @@ img {
   overflow: hidden;
   zoom: 1;
   /* IE < 8 */
-
 }
 .clearfix:after {
   clear: both;
@@ -79,7 +76,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .center {
   margin: 0 auto;
@@ -133,7 +129,6 @@ img {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
   background-image: url(../img/sprite-icons.png);
   background-repeat: no-repeat;
@@ -295,7 +290,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 12px;
   height: 11px;
   margin-top: 2px;
@@ -324,7 +318,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -365,7 +358,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -379,7 +371,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -410,7 +401,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -450,6 +440,7 @@ a.i-skype-black:hover {
 .contacts-top {
   height: 40px;
   padding-top: 25px;
+  overflow: hidden;
 }
 .contacts-top span,
 .contacts-top div {
@@ -457,7 +448,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .icons-social {
   margin-left: 25px;
@@ -470,15 +460,13 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
-  margin: -25px 0 0 15px;
+  margin: -35px 0 0 15px;
 }
 .languages a {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 25px;
   height: 54px;
   padding: 25px 0 0 5px;
@@ -511,7 +499,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 180px;
   height: 64px;
   margin-top: 10px;
@@ -534,7 +521,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 41px;
   line-height: 40px;
   color: #383838;
@@ -634,7 +620,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   margin-top: 5px;
   font-size: 14px;
   color: #0ca26b;
@@ -699,7 +684,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -773,7 +757,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 40px;
   line-height: 40px;
   padding: 0 15px;
@@ -788,7 +771,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .list-filters-chosen li {
   color: #f4f4f4 !important;
@@ -828,7 +810,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 17px;
   height: 7px;
   margin-bottom: 3px;
@@ -1095,7 +1076,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   padding: 5px 10px;
   margin-right: 5px;
   background-color: #e0e0e0;
@@ -1161,7 +1141,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -1204,7 +1183,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 47%;
   vertical-align: top;
 }
@@ -1229,7 +1207,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   content: "";
   width: 4px;
   height: 10px;
@@ -1242,7 +1219,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 145px;
   margin-right: 8px;
 }
@@ -1260,7 +1236,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   content: "";
   width: 4px;
   height: 10px;
@@ -1304,7 +1279,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   position: relative;
   padding: 5px 10px;
   background-color: #383838;
@@ -1330,7 +1304,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   margin-left: 15px;
   vertical-align: middle;
 }
@@ -1339,7 +1312,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .list-share li a {
   color: #000000;
@@ -1364,7 +1336,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   vertical-align: top;
 }
 .ap-owner {
@@ -1406,14 +1377,12 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .new-info ul li:before {
   display: inline-block;
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 0;
   height: 18px;
   border-left: 1px solid #afafaf;
@@ -1433,7 +1402,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 24px;
   padding: 0 8px;
   margin-left: 5px;
@@ -1537,7 +1505,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   margin-right: 8px;
@@ -1564,7 +1531,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px;
   margin-right: 8px;
@@ -1663,7 +1629,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -1687,7 +1652,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -1755,7 +1719,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   position: relative;
   padding: 5px 10px;
   background-color: #383838;
@@ -2062,7 +2025,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -2088,7 +2050,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2126,7 +2087,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   height: 22px;
   line-height: 22px;
   padding: 0 10px;
@@ -2180,7 +2140,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2257,7 +2216,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px;
   margin-bottom: 4px;
@@ -2322,7 +2280,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -2346,7 +2303,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2375,7 +2331,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 30px;
   height: 22px;
   line-height: 24px;
@@ -2399,7 +2354,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
@@ -2425,7 +2379,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .select-search-filter {
   width: 150px;
@@ -2438,7 +2391,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
@@ -2541,7 +2493,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   position: relative;
   height: 27px;
   background-color: #989897;
@@ -2578,7 +2529,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 100px;
   height: 21px;
   line-height: 21px;
@@ -2646,7 +2596,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .list-checkboxes li,
 .list-checkboxes li:hover {
@@ -2665,7 +2614,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: auto;
   height: 17px;
   line-height: 16px;
@@ -2684,7 +2632,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   width: 13px;
   height: 6px !important;
   margin: 12px 6px 0;
@@ -2731,7 +2678,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
 }
 .list-areas li {
   position: relative;
@@ -2743,7 +2689,6 @@ a.i-skype-black:hover {
   *display: block;
   zoom: 1;
   /* IE < 8 */
-
   padding: 5px;
   margin-left: 5px;
   font-size: 14px;
