@@ -676,16 +676,20 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
 .block-search {
   border-top: 2px solid #ffffff;
 }
-.tabs {
+.tabs,
+.tabs-static {
   background-color: #f4f4f4;
 }
-.tabs ul {
+.tabs ul,
+.tabs-static ul {
   list-style-type: none;
 }
-.tabs li {
+.tabs li,
+.tabs-static li {
   float: left;
 }
-.tabs li a {
+.tabs li a,
+.tabs-static li a {
   display: inline-block;
   *display: block;
   zoom: 1;
@@ -697,14 +701,16 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   font-size: 16px;
   text-transform: uppercase;
 }
-.tabs li a:hover {
+.tabs li a:hover,
+.tabs-static li a:hover {
   position: relative;
   color: #ffffff;
   background-color: #0ca26b;
   background-color: #ffffd7;
   color: #383838;
 }
-.tabs li a:hover:after {
+.tabs li a:hover:after,
+.tabs-static li a:hover:after {
   position: absolute;
   bottom: 0;
   right: -7px;
@@ -717,13 +723,17 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   border-color: #d7d7d7 transparent transparent transparent;
 }
 .tabs li .is-active,
-.tabs li .is-active:hover {
+.tabs-static li .is-active,
+.tabs li .is-active:hover,
+.tabs-static li .is-active:hover {
   position: relative;
   color: #ffffff;
   background-color: #0ca26b;
 }
 .tabs li .is-active:after,
-.tabs li .is-active:hover:after {
+.tabs-static li .is-active:after,
+.tabs li .is-active:hover:after,
+.tabs-static li .is-active:hover:after {
   position: absolute;
   bottom: 0;
   right: -7px;
