@@ -2437,6 +2437,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .sl-placeholder {
+  width: auto;
   height: 12px;
   background: #989897;
   color: #383838;
@@ -2536,6 +2537,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
 }
 .custom-select-chosen-items,
 .custom-select-chosen-items-locations {
+  width: auto;
   height: 12px;
   background: #989897;
   color: #383838;
