@@ -2241,7 +2241,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   /* IE < 8 */
   width: 13px;
   height: 6px;
-  margin-bottom: 4px;
+  margin: 4px 0;
   background-repeat: no-repeat;
 }
 .v-jcarousel-control-prev:hover,
@@ -2441,7 +2441,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
 }
 .sl-placeholder {
   width: auto;
-  height: 12px;
+  height: 16px;
   background: #989897;
   color: #383838;
   font-size: 14px;
@@ -2541,7 +2541,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
 .custom-select-chosen-items,
 .custom-select-chosen-items-locations {
   width: auto;
-  height: 12px;
+  height: 16px;
   background: #989897;
   color: #383838;
   font-size: 14px;
@@ -2689,6 +2689,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
 }
 .custom-select-locations .right {
   width: 135px;
+  min-height: 110px;
   padding: 40px 0 0 25px;
 }
 .custom-select-locations h5 {
