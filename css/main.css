@@ -292,10 +292,9 @@ a.i-skype-black:hover {
   /* IE < 8 */
   width: 12px;
   height: 11px;
-  margin-top: 2px;
+  margin-top: 5px;
   background-image: url(../img/sprite-icons.png);
   background-position: -46px -106px;
-  vertical-align: middle;
 }
 .i-arrow-down {
   background-image: url(../img/sprite-icons.png);
@@ -1671,7 +1670,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
-  vertical-align: text-top;
+  margin-top: 4px;
 }
 .list-links-big li:hover span {
   background-color: #f4f4f4;
@@ -1692,7 +1691,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   line-height: 25px;
 }
 .list-links-big li i {
-  vertical-align: text-top;
+  margin-top: 4px;
 }
 .list-links-big li a {
   color: #0ca26b;
@@ -2076,7 +2075,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
-  vertical-align: text-top;
+  margin-top: 4px;
 }
 .btn-prev:hover span,
 .btn-next:hover span {
@@ -2167,7 +2166,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
-  vertical-align: text-top;
+  margin-top: 5px;
 }
 .jcarousel-control-prev {
   left: -60px;
@@ -2290,7 +2289,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
 }
 .slider-small .jcarousel-control-prev-small i,
 .slider-small .jcarousel-control-next-small i {
-  vertical-align: text-top;
+  margin-top: 4px;
 }
 .slider-small .jcarousel-control-prev-small {
   left: -38px;
@@ -2330,7 +2329,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
-  vertical-align: text-top;
+  margin-top: 4px;
 }
 .slider-small .jcarousel-control-prev-small:hover span {
   background-color: #f4f4f4;
@@ -2382,7 +2381,7 @@ html[data-useragent*='MSIE 10.0'] .contacts-top {
   width: 6px;
   height: 13px;
   background-image: url(../img/sprite-icons.png);
-  vertical-align: text-top;
+  margin-top: 4px;
 }
 .slider-small .jcarousel-control-next-small:hover span {
   background-color: #f4f4f4;
