@@ -364,9 +364,18 @@
                         <div class="right">
                             <h3 class="text-big text-dark">Contact</h3>
                             <div class="block-form">
-                                <input type="text" class="input-primary" placeholder="Name">
-                                <input type="text" class="input-primary" placeholder="Email">
-                                <textarea class="textarea-primary" placeholder="Message"></textarea>
+                                <div class="input-wrapper error">
+                                    <input type="text" class="input-primary" placeholder="Name">
+                                    <div class="error-msg">This field is required</div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" class="input-primary" placeholder="Email">
+                                    <div class="error-msg">This field is required</div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <textarea class="textarea-primary" placeholder="Message"></textarea>
+                                    <div class="error-msg">This field is required</div>
+                                </div>
                                 <button type="submit" class="btn-big">Submit</button>
                             </div>
                         </div>
